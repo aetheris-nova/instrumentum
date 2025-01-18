@@ -1,0 +1,78 @@
+name: "Pull Request Checks"
+
+on:
+  pull_request:
+
+jobs:
+  changed_files:
+    name: "Changed Files"
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: read
+    outputs:
+      types: ${{ steps.filter.outputs.types }}
+      ui_components: ${{ steps.filter.outputs.ui_components }}
+      utils: ${{ steps.filter.outputs.utils }}
+    steps:
+      - name: "📥 Filter"
+        uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            types:
+              - 'packages/types/**'
+            ui_components:
+              - 'packages/ui-components/**'
+            utils:
+              - 'packages/utils/**'
+
+  validate_pr_title:
+    name: "Validate PR Title"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "🛎 Checkout"
+        uses: actions/checkout@v4
+      - name: "🔧 Setup"
+        uses: ./.github/actions/use-pnpm-dependencies
+      - name: "📥 Get PR Title"
+        id: get_pr_title
+        uses: actions/github-script@v7
+        with:
+          result-encoding: string
+          script: |
+            const { data } = await github.rest.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.pull_request.number
+            });
+            return data.title;
+      - name: "✅ Validate"
+        run: echo "${{ steps.get_pr_title.outputs.result }}" | npx commitlint
+
+  ##
+  # package specific
+  ##
+
+  lint_build_test_types:
+    name: "Lint, Build & Test - @aetherisnova/types"
+    needs: [changed_files, validate_pr_title]
+    if: ${{ needs.changed_files.outputs.types == 'true' }}
+    uses: ./.github/workflows/lint_build_test.yml
+    with:
+      package_name: "@aetherisnova/types"
+
+  lint_build_test_ui_components:
+    name: "Lint, Build & Test - @aetherisnova/ui-components"
+    needs: [changed_files, validate_pr_title]
+    if: ${{ needs.changed_files.outputs.ui_components == 'true' }}
+    uses: ./.github/workflows/lint_build_test.yml
+    with:
+      package_name: "@aetherisnova/ui-components"
+
+  lint_build_test_utils:
+    name: "Lint, Build & Test - @aetherisnova/utils"
+    needs: [changed_files, validate_pr_title]
+    if: ${{ needs.changed_files.outputs.utils == 'true' }}
+    uses: ./.github/workflows/lint_build_test.yml
+    with:
+      package_name: "@aetherisnova/utils"
