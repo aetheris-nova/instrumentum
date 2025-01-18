@@ -92,9 +92,6 @@ importers:
       '@aetherisnova/types':
         specifier: workspace:^
         version: link:../types
-      '@aetherisnova/utils':
-        specifier: workspace:^
-        version: link:../utils
       '@chakra-ui/color-mode':
         specifier: ^2.2.0
         version: 2.2.0(react@19.0.0)
