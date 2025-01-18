@@ -2,7 +2,6 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "declarationMap": true,
-    "lib": ["ESNext"],
     "moduleResolution": "Bundler",
     "outDir": "dist",
     "rootDir": "src",

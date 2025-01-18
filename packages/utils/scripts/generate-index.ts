@@ -1,6 +1,6 @@
 import chalk from 'chalk';
 import { readdirSync, type Stats, statSync, writeFileSync } from 'node:fs';
-import { join, parse, type ParsedPath } from 'node:path';
+import { join } from 'node:path';
 import * as process from 'node:process';
 
 /**
@@ -9,21 +9,18 @@ import * as process from 'node:process';
 function main(): void {
   const srcDir = 'src';
   const exports = ['// exports will be generated automatically generated using: npm run generate:index'];
-  let file: ParsedPath;
   let indexFilePath: string;
   let stat: Stats;
 
   for (const item of readdirSync(srcDir)) {
     stat = statSync(join(srcDir, item));
 
-    // if it is not a file or it is the index file, move on
-    if (!stat.isFile() || item === 'index.ts') {
+    // if it is not a directory, move on
+    if (!stat.isDirectory()) {
       continue;
     }
 
-    file = parse(item);
-
-    exports.push(`export type { default as ${file.name} } from './${file.name}';`);
+    exports.push(`export { default as ${item} } from './${item}';`);
   }
 
   indexFilePath = join(srcDir, 'index.ts');
