@@ -7,7 +7,7 @@
 </h1>
 
 <p align="center">
-  TypeScript types for the contract clients.
+  TypeScript types for the Aetheris Nova apps/tools.
 </p>
 
 ---
