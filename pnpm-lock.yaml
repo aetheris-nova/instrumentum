@@ -104,6 +104,9 @@ importers:
       '@emotion/react':
         specifier: ^11.14.0
         version: 11.14.0(@types/react@19.0.7)(react@19.0.0)
+      '@eveworld/types':
+        specifier: ^0.0.10
+        version: 0.0.10(bufferutil@4.0.9)(typescript@5.7.3)(utf-8-validate@5.0.10)
       '@stablelib/random':
         specifier: ^2.0.1
         version: 2.0.1
@@ -912,6 +915,9 @@ packages:
   '@ethereumjs/util@8.1.0':
     resolution: {integrity: sha512-zQ0IqbdX8FZ9aw11vP+dZkKDkS+kgIvQPHnSAXzP9pLu+Rfu3D3XEeLbicvoXJTYnhZiPmsZUxgdzXwNKxRPbA==}
     engines: {node: '>=14'}
+
+  '@eveworld/types@0.0.10':
+    resolution: {integrity: sha512-LusN230CHOPuZLzA90gB3oc66gQIaFDQy1Zo8N5tYMhYx7vlYOC4YmovCKscJudoY18bg6Yi2xQdE5e8LbER3Q==}
 
   '@floating-ui/core@1.6.9':
     resolution: {integrity: sha512-uMXCuQ3BItDUbAMhIXw7UPXRfAlOAvZzdK9BWpE60MCn+Svt3aLn9jsPTi/WNGlRUu2uI0v5S7JiIUsbsvh3fw==}
@@ -5513,6 +5519,15 @@ snapshots:
       '@ethereumjs/rlp': 4.0.1
       ethereum-cryptography: 2.2.1
       micro-ftch: 0.3.1
+
+  '@eveworld/types@0.0.10(bufferutil@4.0.9)(typescript@5.7.3)(utf-8-validate@5.0.10)':
+    dependencies:
+      viem: 2.22.9(bufferutil@4.0.9)(typescript@5.7.3)(utf-8-validate@5.0.10)
+    transitivePeerDependencies:
+      - bufferutil
+      - typescript
+      - utf-8-validate
+      - zod
 
   '@floating-ui/core@1.6.9':
     dependencies:

@@ -1,5 +1,6 @@
 export type { default as IAppProviderProps } from './IAppProviderProps';
 export type { default as IBaseComponentProps } from './IBaseComponentProps';
+export type { default as IUseCheckInGameState } from './IUseCheckInGameState';
 export type { default as TButtonProps } from './TButtonProps';
 export type { default as TCardProps } from './TCardProps';
 export type { default as TEmptyStateProps } from './TEmptyStateProps';

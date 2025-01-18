@@ -10,7 +10,6 @@
 function main {
   # build workspace dependencies
   pnpm -F @aetherisnova/types run build
-  pnpm -F @aetherisnova/utils run build
 
   exit 0
 }
