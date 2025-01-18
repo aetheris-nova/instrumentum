@@ -1,9 +1,6 @@
-import { Button as ChakraButton, Heading } from '@chakra-ui/react';
+import { IconButton as ChakraIconButton } from '@chakra-ui/react';
 import {
-  type PropsWithoutRef,
-  type ForwardRefExoticComponent,
   forwardRef,
-  type RefAttributes,
 } from 'react';
 
 // constants
@@ -14,17 +11,15 @@ import useBackgroundColor from '@hooks/useBackgroundColor';
 import useForegroundColor from '@hooks/useForegroundColor';
 
 // types
-import type { IProps } from './types';
+import type { TIconButtonProps } from '@types';
 
-const Button: ForwardRefExoticComponent<
-  PropsWithoutRef<IProps> & RefAttributes<HTMLButtonElement>
-> = forwardRef<HTMLButtonElement, IProps>(({ children, colorMode = 'light', scheme, ...buttonProps }, ref) => {
+const IconButton = forwardRef<HTMLButtonElement, TIconButtonProps>(({ colorMode = 'light', scheme, ...buttonProps }, ref) => {
   // hooks
   const backgroundColor = useBackgroundColor(colorMode);
   const foregroundColor = useForegroundColor(colorMode);
 
   return (
-    <ChakraButton
+    <ChakraIconButton
       _hover={{
         bg: scheme === 'secondary' ? foregroundColor : backgroundColor,
         color: scheme === 'secondary' ? backgroundColor : foregroundColor,
@@ -37,18 +32,15 @@ const Button: ForwardRefExoticComponent<
       colorPalette="gray"
       fontFamily="{fonts.mono}"
       minH={BUTTON_HEIGHT}
+      minW={BUTTON_HEIGHT}
       textTransform="uppercase"
       transition="ease-in-out 300ms"
       {...buttonProps}
       ref={ref}
-    >
-      <Heading fontSize="sm">
-        {children.toUpperCase()}
-      </Heading>
-    </ChakraButton>
+    />
   );
 });
 
-Button.displayName = 'Button';
+IconButton.displayName = 'IconButton';
 
-export default Button;
+export default IconButton;
