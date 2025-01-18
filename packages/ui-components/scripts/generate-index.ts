@@ -1,29 +1,36 @@
 import chalk from 'chalk';
 import { readdirSync, type Stats, statSync, writeFileSync } from 'node:fs';
-import { join, parse, type ParsedPath } from 'node:path';
+import { join } from 'node:path';
 import * as process from 'node:process';
 
 /**
  * Script that creates the index.ts file in the `src/` directory.
  */
 function main(): void {
+  const directories = ['components', 'hooks'];
+  const exports = [
+    '// exports will be generated automatically generated using: npm run generate:index',
+    `export * from './constants';`,
+    `export { default as theme } from './theme';`,
+  ];
   const srcDir = 'src';
-  const exports = ['// exports will be generated automatically generated using: npm run generate:index'];
-  let file: ParsedPath;
   let indexFilePath: string;
+  let path: string;
   let stat: Stats;
 
-  for (const item of readdirSync(srcDir)) {
-    stat = statSync(join(srcDir, item));
+  for (const directory of directories) {
+    path = join(srcDir, directory);
 
-    // if it is not a file or it is the index file, move on
-    if (!stat.isFile() || item === 'index.ts') {
-      continue;
+    for (const item of readdirSync(path)) {
+      stat = statSync(join(path, item));
+
+      // if it is not a directory, move on
+      if (!stat.isDirectory()) {
+        continue;
+      }
+
+      exports.push(`export { default as ${item} } from './${directory}/${item}';`);
     }
-
-    file = parse(item);
-
-    exports.push(`export type { default as ${file.name} } from './${file.name}';`);
   }
 
   indexFilePath = join(srcDir, 'index.ts');
