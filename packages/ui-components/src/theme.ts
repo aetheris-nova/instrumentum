@@ -1,4 +1,4 @@
-import { createSystem, defineConfig, defaultConfig, Sys } from '@chakra-ui/react';
+import { createSystem, defineConfig, defaultConfig } from '@chakra-ui/react';
 
 export default createSystem(
   defaultConfig,

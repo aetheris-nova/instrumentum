@@ -12,7 +12,6 @@ function main(): void {
     `export { default as defaultTheme } from './theme';`,
   ];
   const srcDir = 'src';
-  const utilsPath = join(srcDir, 'hooks');
   let dir: ParsedPath;
   let indexFilePath: string;
   let stat: Stats;
