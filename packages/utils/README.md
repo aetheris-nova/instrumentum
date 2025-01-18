@@ -1,6 +1,13 @@
-<p align="center">
-    <img alt="The TypeScript logo - a rounded corner blue square with a 'TS' in white" src="../../docs/images/typescript_icon@128x128.png" style="padding-top: 15px" height="128" />
-</p>
+<div align="center">
+    <img alt="The TypeScript logo - a rounded corner blue square with a 'TS' in white" src="docs/images/icon@128x128.png" height="64" />
+</div>
+
+<div align="center">
+
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-brightgreen.svg)](./LICENSE)
+[![NPM Version](https://img.shields.io/npm/v/%40aetherisnova%2Ftutils)](https://www.npmjs.com/package/%40aetherisnova/utils)
+
+</div>
 
 <h1 align="center">
   TypeScript Utilities
