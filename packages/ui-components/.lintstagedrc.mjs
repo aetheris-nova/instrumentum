@@ -1,7 +1,7 @@
 import { resolve } from 'node:path';
 
 export default (() => {
-  const packageName = 'types';
+  const packageName = 'ui-components';
 
   return {
     '**/*.{js,json,ts}': (filenames) => [
