@@ -24,7 +24,8 @@
     "test": "vitest run --config vitest.config.ts"
   },
   "dependencies": {
-    "@aetherisnova/types": "workspace:^"
+    "@aetherisnova/types": "workspace:^",
+    "@stablelib/uuid": "^2.0.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.16.0",
