@@ -1,0 +1,47 @@
+name: "Release"
+
+on:
+  push:
+    branches:
+      - beta
+      - main
+
+concurrency:
+  group: release-${{ github.ref_name }}
+  cancel-in-progress: true # ensure only one release workflow runs per branch (e.g., "release-beta" or "release-main")
+
+permissions:
+  contents: write # to be able to publish a github release
+  issues: write # to be able to comment on released issues
+  packages: write  # to be able to publish packages
+  pull-requests: write # to be able to comment on released pull requests
+
+jobs:
+  release_types:
+    name: "Release - @aetherisnova/types"
+    uses: ./.github/workflows/publish_release.yml
+    with:
+      package_dir: "types"
+      package_name: "@aetherisnova/types"
+    secrets:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+  release_ui_components:
+    needs: [release_types]
+    name: "Release - @aetherisnova/ui-components"
+    uses: ./.github/workflows/publish_release.yml
+    with:
+      package_dir: "ui-components"
+      package_name: "@aetherisnova/ui-components"
+    secrets:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+  release_utils:
+    needs: [release_types, release_ui_components]
+    name: "Release - @aetherisnova/utils"
+    uses: ./.github/workflows/publish_release.yml
+    with:
+      package_dir: "utils"
+      package_name: "@aetherisnova/utils"
+    secrets:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
