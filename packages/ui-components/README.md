@@ -1,13 +1,13 @@
 <p align="center">
-    <img alt="The TypeScript logo - a rounded corner blue square with a 'TS' in white" src="../../docs/images/typescript_icon@128x128.png" style="padding-top: 15px" height="128" />
+    <img alt="The TypeScript logo - a rounded corner blue square with a 'TS' in white" src="../../docs/images/react_icon@128x128.png" style="padding-top: 15px" height="128" />
 </p>
 
 <h1 align="center">
-  TypeScript Types
+  UI Components
 </h1>
 
 <p align="center">
-  TypeScript types for the contract clients.
+  React UI components used in the Aetheris Nova apps.
 </p>
 
 ---
@@ -27,7 +27,7 @@
 
 You can install the types using:
 ```shell
-pnpm add @aetherisnova/types
+pnpm add @aetherisnova/ui-components
 ```
 
 <sup>[Back to top ^][table-of-contents]</sup>

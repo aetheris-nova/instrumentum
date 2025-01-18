@@ -87,9 +87,10 @@ pnpm install
 
 ### 3.1. Packages
 
-| Name                                  | Visibility | Description                                        |
-|---------------------------------------|------------|----------------------------------------------------|
-| [`types`](./packages/types/README.md) | `public`   | TypeScript types for the Aetheris Nova apps/tools. |
+| Name                                                  | Visibility | Description                                         |
+|-------------------------------------------------------|------------|-----------------------------------------------------|
+| [`types`](./packages/types/README.md)                 | `public`   | TypeScript types for the Aetheris Nova apps/tools.  |
+| [`ui-components`](./packages/ui-components/README.md) | `public`   | React UI components used in the Aetheris Nova apps. |
 
 <sup>[Back to top ^][table-of-contents]</sup>
 

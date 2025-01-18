@@ -1,0 +1,37 @@
+{
+  "name": "@aetherisnova/ui-components",
+  "version": "1.0.0",
+  "private": false,
+  "description": "React UI components used in the Aetheris Nova apps.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aetheris-nova/instrumentum"
+  },
+  "license": "CC0-1.0",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "pnpm clean && tsc -p tsconfig.build.json",
+    "build:dependencies": "exit 0",
+    "clean": "shx rm -rf dist && shx rm -rf tsconfig.*.tsbuildinfo",
+    "generate:index": "tsx ./scripts/generate-index.ts",
+    "lint": "eslint .",
+    "prettier": "prettier --write \"**/*.ts\"",
+    "test": "exit 0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "@types/node": "^22.10.1",
+    "chalk": "^5.3.0",
+    "eslint": "^9.16.0",
+    "eslint-config-prettier": "^9.1.0",
+    "ethers": "^6.13.4",
+    "globals": "^15.13.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.0"
+  }
+}
