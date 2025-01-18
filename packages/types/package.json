@@ -1,6 +1,6 @@
 {
   "name": "@aetherisnova/types",
-  "version": "1.0.0",
+  "version": "1.0.1-beta.1",
   "private": false,
   "description": "TypeScript types for the Aetheris Nova apps/tools.",
   "repository": {
