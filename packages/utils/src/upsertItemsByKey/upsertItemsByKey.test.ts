@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 
-// module
+// utils
 import upsertItemsByKey from './upsertItemsByKey';
 
 type TTestType = Record<'id' | 'name', string>;
