@@ -6,7 +6,7 @@
  * @param {string} key - The key to use as the indexer.
  * @returns {Type extends Record<'id', string>} A new list with the items updated or added.
  */
-export default function upsertItemsByKey<Type extends Record<string, unknown>>(
+export default function upsertItemsByKey<Type = Record<string, unknown>>(
   items: Type[],
   upsertItems: Type[],
   key: keyof Type
