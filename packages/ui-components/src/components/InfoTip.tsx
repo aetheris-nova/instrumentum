@@ -12,6 +12,7 @@ import type { TTooltipProps } from '@types';
 
 const InfoTip = forwardRef<HTMLDivElement, TTooltipProps>(({
   children,
+  content: _,
   ...otherProps
 }, ref) => {
   return (

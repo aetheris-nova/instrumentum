@@ -3,11 +3,11 @@ import type { StackProps } from '@chakra-ui/react';
 // types
 import type { IBaseComponentProps } from '@types';
 
-interface IProps {
+export interface ICardProps {
   subtitle?: string;
   title?: string;
 }
 
-type TCardProps = StackProps & IBaseComponentProps & IProps;
+type TCardProps = StackProps & IBaseComponentProps & ICardProps;
 
 export default TCardProps;

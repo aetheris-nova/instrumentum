@@ -87,7 +87,7 @@ pnpm install
 
 ### 3.1. Packages
 
-| Name                                                  | Visibility | Description                                            | Version                                                                                                                                     |
+| Name                                                  | Visibility | Description                                            | Package                                                                                                                                     |
 |-------------------------------------------------------|------------|--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | [`types`](./packages/types/README.md)                 | `public`   | TypeScript types for the Aetheris Nova apps/tools.     | [![NPM Version](https://img.shields.io/npm/v/%40aetherisnova%2Ftypes)](https://www.npmjs.com/package/%40aetherisnova/types)                 |
 |

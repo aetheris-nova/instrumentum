@@ -4,7 +4,7 @@ import type { ReactNode, RefObject } from 'react';
 // types
 import type { IBaseComponentProps } from '@types';
 
-interface IProps {
+export interface ITooltipProps {
   content: ReactNode;
   contentProps?: ChakraTooltip.ContentProps;
   disabled?: boolean;
@@ -13,6 +13,6 @@ interface IProps {
   showArrow?: boolean;
 }
 
-type TTooltipProps = ChakraTooltip.RootProps & IBaseComponentProps & IProps;
+type TTooltipProps = ChakraTooltip.RootProps & IBaseComponentProps & ITooltipProps;
 
 export default TTooltipProps;

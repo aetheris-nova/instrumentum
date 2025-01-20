@@ -4,13 +4,13 @@ import type { ReactNode, RefObject } from 'react';
 // types
 import type { IBaseComponentProps } from '@types';
 
-interface IProps {
+export interface IToggleTipProps {
   content: ReactNode;
   portalled?: boolean;
   portalRef?: RefObject<HTMLElement>;
   showArrow?: boolean;
 }
 
-type TToggleTipProps = ChakraPopover.RootProps & IBaseComponentProps & IProps;
+type TToggleTipProps = ChakraPopover.RootProps & IBaseComponentProps & IToggleTipProps;
 
 export default TToggleTipProps;

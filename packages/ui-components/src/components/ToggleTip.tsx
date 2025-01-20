@@ -40,7 +40,6 @@ const ToggleTip = forwardRef<HTMLDivElement, TToggleTipProps>(({
             )}
 
             {content}
-
           </ChakraPopover.Content>
         </ChakraPopover.Positioner>
       </Portal>

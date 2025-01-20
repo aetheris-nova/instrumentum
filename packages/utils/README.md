@@ -5,7 +5,8 @@
 <div align="center">
 
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-brightgreen.svg)](./LICENSE)
-[![NPM Version](https://img.shields.io/npm/v/%40aetherisnova%2Ftutils)](https://www.npmjs.com/package/%40aetherisnova/utils)
+[![NPM Version](https://img.shields.io/npm/v/%40aetherisnova%2Futils)](https://www.npmjs.com/package/%40aetherisnova/utils)
+![GitHub Release](https://img.shields.io/github/v/release/aetheris-nova/instrumentum?filter=%40aetherisnova%2Futils*)
 
 </div>
 
