@@ -6,6 +6,8 @@
 
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-brightgreen.svg)](./LICENSE)
 [![NPM Version](https://img.shields.io/npm/v/%40aetherisnova%2Ftypes)](https://www.npmjs.com/package/%40aetherisnova/types)
+![GitHub Release](https://img.shields.io/github/v/release/aetheris-nova/instrumentum?filter=%40aetherisnova%2Ftypes*)
+
 
 </div>
 

@@ -3,10 +3,10 @@ import { IconButtonProps } from '@chakra-ui/react';
 // types
 import type { IBaseComponentProps } from '@types';
 
-interface IProps {
+export interface IIconButtonProps {
   scheme?: 'primary' | 'secondary';
 }
 
-type TProps = IconButtonProps & IBaseComponentProps & IProps;
+type TProps = IconButtonProps & IBaseComponentProps & IIconButtonProps;
 
 export default TProps;

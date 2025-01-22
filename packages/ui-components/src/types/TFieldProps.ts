@@ -4,13 +4,13 @@ import type { ReactNode } from 'react';
 // types
 import type { IBaseComponentProps } from '@types';
 
-interface IProps {
+export interface IFieldProps {
   errorText?: ReactNode;
   helperText?: ReactNode;
   label: ReactNode;
   optionalText?: ReactNode;
 }
 
-type TFieldProps = Omit<ChakraField.RootProps, 'label'> & IBaseComponentProps & IProps;
+type TFieldProps = Omit<ChakraField.RootProps, 'label'> & IBaseComponentProps & IFieldProps;
 
 export default TFieldProps;

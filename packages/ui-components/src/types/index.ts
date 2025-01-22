@@ -3,6 +3,7 @@ export type { default as IBaseComponentProps } from './IBaseComponentProps';
 export type { default as IUseCheckInGameState } from './IUseCheckInGameState';
 export type { default as TButtonProps } from './TButtonProps';
 export type { default as TCardProps } from './TCardProps';
+export type { default as TDataListItemProps } from './TDataListItemProps';
 export type { default as TEmptyStateProps } from './TEmptyStateProps';
 export type { default as TFieldProps } from './TFieldProps';
 export type { default as TIconButtonProps } from './TIconButtonProps';

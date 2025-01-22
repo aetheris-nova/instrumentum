@@ -4,12 +4,12 @@ import type { ReactNode } from 'react';
 // types
 import type { IBaseComponentProps } from '@types';
 
-interface IProps {
+export interface IEmptyStateProps {
   description?: string;
   icon?: ReactNode;
   title: string;
 }
 
-type TEmptyStateProps = ChakraEmptyState.RootProps & IBaseComponentProps & IProps;
+type TEmptyStateProps = ChakraEmptyState.RootProps & IBaseComponentProps & IEmptyStateProps;
 
 export default TEmptyStateProps;

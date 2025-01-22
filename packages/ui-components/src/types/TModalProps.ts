@@ -4,7 +4,7 @@ import type { ReactElement, ReactNode } from 'react';
 import type IBaseComponentProps from './IBaseComponentProps';
 import type TButtonProps from './TButtonProps';
 
-interface IProps {
+export interface IModalProps {
   body: ReactNode;
   closeButton?: boolean;
   footer?: ReactElement<TButtonProps>[];
@@ -14,6 +14,6 @@ interface IProps {
   title?: string;
 }
 
-type TModalProps = IBaseComponentProps & IProps;
+type TModalProps = IBaseComponentProps & IModalProps;
 
 export default TModalProps;

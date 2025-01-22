@@ -1,10 +1,10 @@
 // types
 import type { IBaseComponentProps } from '@types';
 
-interface IProps {
+export interface IPulseLoaderProps {
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 }
 
-type TPulseLoaderProps = IBaseComponentProps & IProps;
+type TPulseLoaderProps = IBaseComponentProps & IPulseLoaderProps;
 
 export default TPulseLoaderProps;

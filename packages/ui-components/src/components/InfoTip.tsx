@@ -12,6 +12,9 @@ import type { TTooltipProps } from '@types';
 
 const InfoTip = forwardRef<HTMLDivElement, TTooltipProps>(({
   children,
+  /* eslint-disable @typescript-eslint/no-unused-vars */
+  content: _,
+  /* eslint-enable @typescript-eslint/no-unused-vars */
   ...otherProps
 }, ref) => {
   return (

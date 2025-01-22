@@ -1,5 +1,7 @@
 export { default as Button } from './Button';
 export { default as Card } from './Card';
+export { default as DataList } from './DataList';
+export { default as DataListItem } from './DataListItem';
 export { default as EmptyState } from './EmptyState';
 export { default as Field } from './Field';
 export { default as IconButton } from './IconButton';

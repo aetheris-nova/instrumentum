@@ -14,9 +14,6 @@ export default createSystem(
         lineHeight: '1.5',
         scrollbarWidth: 'none',
       },
-      body: {
-        msOverflowStyle: 'none',
-      },
     },
     theme: {
       keyframes: {
