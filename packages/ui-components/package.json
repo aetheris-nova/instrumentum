@@ -1,6 +1,6 @@
 {
   "name": "@aetherisnova/ui-components",
-  "version": "1.0.1",
+  "version": "1.0.2-beta.1",
   "private": false,
   "description": "React UI components used in the Aetheris Nova apps.",
   "repository": {
