@@ -1,3 +1,10 @@
+# [@aetherisnova/types-v1.0.2-beta.1](https://github.com/aetheris-nova/instrumentum/compare/@aetherisnova/types-v1.0.1...@aetherisnova/types-v1.0.2-beta.1) (2025-01-22)
+
+
+### Bug Fixes
+
+* correctly export type definitions ([#3](https://github.com/aetheris-nova/instrumentum/issues/3)) ([c84b2d5](https://github.com/aetheris-nova/instrumentum/commit/c84b2d5ec872fdd7e5d20d2a5959f63fa11885de))
+
 # [@aetherisnova/types-v1.0.1](https://github.com/aetheris-nova/instrumentum/compare/@aetherisnova/types-v1.0.0...@aetherisnova/types-v1.0.1) (2025-01-19)
 
 
