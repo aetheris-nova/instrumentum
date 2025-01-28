@@ -8,13 +8,10 @@ import { GrCircleInformation } from 'react-icons/gr';
 import ToggleTip from './ToggleTip';
 
 // types
-import type { TTooltipProps } from '@types';
+import type { TInfoTipProps } from '@types';
 
-const InfoTip = forwardRef<HTMLDivElement, TTooltipProps>(({
+const InfoTip = forwardRef<HTMLDivElement, TInfoTipProps>(({
   children,
-  /* eslint-disable @typescript-eslint/no-unused-vars */
-  content: _,
-  /* eslint-enable @typescript-eslint/no-unused-vars */
   ...otherProps
 }, ref) => {
   return (

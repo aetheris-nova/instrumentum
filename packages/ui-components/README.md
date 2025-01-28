@@ -35,7 +35,7 @@
 
 You can install the types using:
 ```shell
-pnpm add @aetherisnova/ui-components react react-dom viem wagmi
+pnpm add @aetherisnova/ui-components @chakra-ui/react@3.x @emotion/react @tanstack/react-query react@18.x viem@2.x wagmi@2.x
 ```
 
 <sup>[Back to top ^][table-of-contents]</sup>

@@ -89,21 +89,12 @@ importers:
       '@aetherisnova/types':
         specifier: workspace:^
         version: link:../types
-      '@chakra-ui/react':
-        specifier: ^3.4.0
-        version: 3.4.0(@emotion/react@11.14.0(@types/react@18.3.18)(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@emotion/react':
-        specifier: ^11.14.0
-        version: 11.14.0(@types/react@18.3.18)(react@18.3.1)
       '@eveworld/types':
         specifier: ^0.0.10
         version: 0.0.10(bufferutil@4.0.9)(typescript@5.7.3)(utf-8-validate@5.0.10)
       '@stablelib/random':
         specifier: ^2.0.1
         version: 2.0.1
-      '@tanstack/react-query':
-        specifier: ^5.64.1
-        version: 5.64.1(react@18.3.1)
       i18next:
         specifier: ^24.2.1
         version: 24.2.1(typescript@5.7.3)
@@ -117,18 +108,24 @@ importers:
       '@chakra-ui/color-mode':
         specifier: ^2.2.0
         version: 2.2.0(react@18.3.1)
+      '@chakra-ui/react':
+        specifier: 3.x
+        version: 3.4.0(@emotion/react@11.14.0(@types/react@18.3.18)(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@emotion/react':
+        specifier: '>=11.x'
+        version: 11.14.0(@types/react@18.3.18)(react@18.3.1)
       '@eslint/js':
         specifier: ^9.16.0
         version: 9.18.0
+      '@tanstack/react-query':
+        specifier: ^5.x
+        version: 5.64.1(react@18.3.1)
       '@types/node':
         specifier: ^22.10.1
         version: 22.10.7
       '@types/react':
-        specifier: ^18.x
+        specifier: '>=18.x'
         version: 18.3.18
-      '@types/react-dom':
-        specifier: ^18.x
-        version: 18.3.5(@types/react@18.3.18)
       chalk:
         specifier: ^5.3.0
         version: 5.4.1
@@ -142,11 +139,8 @@ importers:
         specifier: ^15.13.0
         version: 15.14.0
       react:
-        specifier: ^18.x
+        specifier: '>=18.x'
         version: 18.3.1
-      react-dom:
-        specifier: ^18.x
-        version: 18.3.1(react@18.3.1)
       tsx:
         specifier: ^4.19.2
         version: 4.19.2
@@ -172,7 +166,7 @@ importers:
         specifier: ^2.1.8
         version: 2.1.8(@types/node@22.10.7)
       wagmi:
-        specifier: ^2.x
+        specifier: 2.x
         version: 2.14.8(@tanstack/query-core@5.64.1)(@tanstack/react-query@5.64.1(react@18.3.1))(@types/react@18.3.18)(bufferutil@4.0.9)(react@18.3.1)(typescript@5.7.3)(utf-8-validate@5.0.10)(viem@2.22.9(bufferutil@4.0.9)(typescript@5.7.3)(utf-8-validate@5.0.10))
 
   packages/utils:
@@ -1547,11 +1541,6 @@ packages:
 
   '@types/prop-types@15.7.14':
     resolution: {integrity: sha512-gNMvNH49DJ7OJYv+KAKn0Xp45p8PLl6zo2YnvDIbTd4J6MER2BmWN49TG7n9LvkyihINxeKW8+3bfS2yDC9dzQ==}
-
-  '@types/react-dom@18.3.5':
-    resolution: {integrity: sha512-P4t6saawp+b/dFrUr2cvkVsfvPguwsxtH6dNIYRllMsefqFzkZk5UIjzyDOv5g1dXIPdG4Sp1yCR4Z6RCUsG/Q==}
-    peerDependencies:
-      '@types/react': ^18.0.0
 
   '@types/react@18.3.18':
     resolution: {integrity: sha512-t4yC+vtgnkYjNSKlFx1jkAhH8LgTo2N/7Qvi83kdEaUtMDiwpbLAktKDaAMlRcJ5eSxZkH74eEGt1ky31d7kfQ==}
@@ -6435,10 +6424,6 @@ snapshots:
   '@types/parse-json@4.0.2': {}
 
   '@types/prop-types@15.7.14': {}
-
-  '@types/react-dom@18.3.5(@types/react@18.3.18)':
-    dependencies:
-      '@types/react': 18.3.18
 
   '@types/react@18.3.18':
     dependencies:

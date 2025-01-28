@@ -36,6 +36,7 @@ const DataListItem = forwardRef<HTMLDivElement, TDataListItemProps>(({
     <ChakraDataList.Item minH={minHeight} ref={ref} {...otherProps}>
       <ChakraDataList.ItemLabel flex={grow ? '1' : undefined}>
         {label}
+
         {info && (
           <InfoTip>
             {info}
