@@ -1,7 +1,6 @@
-import { useMediaQuery } from '@chakra-ui/react';
+// hooks
+import useMediaQuery from '@hooks/useMediaQuery';
 
 export default function useDesktopAndUp(): boolean {
-  const [value] = useMediaQuery(['(min-width: 1024px)'], {});
-
-  return value;
+  return useMediaQuery('(min-width: 1024px)');
 }

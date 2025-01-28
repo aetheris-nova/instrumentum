@@ -1,7 +1,6 @@
-import { useMediaQuery } from '@chakra-ui/react';
+// hooks
+import useMediaQuery from '@hooks/useMediaQuery';
 
 export default function useMobileOnly(): boolean {
-  const [value] = useMediaQuery(['(max-width: 768px - 1px)'], {});
-
-  return value;
+  return useMediaQuery('(max-width: 768px - 1px)');
 }
