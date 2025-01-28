@@ -1,3 +1,10 @@
+# [@aetherisnova/ui-components-v1.1.0-beta.3](https://github.com/aetheris-nova/instrumentum/compare/@aetherisnova/ui-components-v1.1.0-beta.2...@aetherisnova/ui-components-v1.1.0-beta.3) (2025-01-28)
+
+
+### Bug Fixes
+
+* **ui-components:** typo in hook index file ([4afc446](https://github.com/aetheris-nova/instrumentum/commit/4afc446c30f8a0e4200827a3857b0f597f235c7b))
+
 # [@aetherisnova/ui-components-v1.1.0-beta.2](https://github.com/aetheris-nova/instrumentum/compare/@aetherisnova/ui-components-v1.1.0-beta.1...@aetherisnova/ui-components-v1.1.0-beta.2) (2025-01-28)
 
 
