@@ -1,3 +1,10 @@
+# [@aetherisnova/ui-components-v1.0.3-beta.1](https://github.com/aetheris-nova/instrumentum/compare/@aetherisnova/ui-components-v1.0.2...@aetherisnova/ui-components-v1.0.3-beta.1) (2025-01-28)
+
+
+### Bug Fixes
+
+* **ui components:** remove external dependencies from bundle ([#4](https://github.com/aetheris-nova/instrumentum/issues/4)) ([d72c144](https://github.com/aetheris-nova/instrumentum/commit/d72c144ea40361053d8cd9f3554ee9d6e7d154c5))
+
 # [@aetherisnova/ui-components-v1.0.2](https://github.com/aetheris-nova/instrumentum/compare/@aetherisnova/ui-components-v1.0.1...@aetherisnova/ui-components-v1.0.2) (2025-01-28)
 
 
