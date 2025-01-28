@@ -11,7 +11,15 @@ export default defineConfig({
     },
     outDir: 'dist',
     rollupOptions: {
-      external: ['react', 'react/jsx-runtime', 'viem', 'wagmi'],
+      external: [
+        '@chakra-ui/react',
+        '@emotion/react',
+        '@tanstack/react-query',
+        'react',
+        'react/jsx-runtime',
+        'viem',
+        'wagmi',
+      ],
     },
   },
   plugins: [
