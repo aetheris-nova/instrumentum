@@ -4,4 +4,4 @@ export { default as useDesktopAndUp } from './useDesktopAndUp';
 export { default as useForegroundColor } from './useForegroundColor';
 export { default as useMediaQuery } from './useMediaQuery';
 export { default as useMobileOnly } from './useMobileOnly';
-export { default as useTableAndUp } from './useTableAndUp';
+export { default as useTableAndUp } from './useTabletAndUp';

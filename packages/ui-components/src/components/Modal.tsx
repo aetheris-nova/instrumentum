@@ -20,7 +20,7 @@ import { DEFAULT_GAP, BUTTON_HEIGHT } from '@constants';
 // hooks
 import useBackgroundColor from '@hooks/useBackgroundColor';
 import useForegroundColor from '@hooks/useForegroundColor';
-import useTableAndUp from '@hooks/useTableAndUp';
+import useTabletAndUp from '@hooks/useTabletAndUp';
 
 // types
 import type { TModalProps } from '@types';
@@ -29,7 +29,7 @@ const Modal: FC<TModalProps> = ({ body, closeButton, colorMode = 'light', footer
   // hooks
   const backgroundColor = useBackgroundColor(colorMode);
   const foregroundColor = useForegroundColor(colorMode);
-  const isTabletAndUp = useTableAndUp();
+  const isTabletAndUp = useTabletAndUp();
   // memos
   const context = useMemo(() => randomString(8), []);
   // handlers
