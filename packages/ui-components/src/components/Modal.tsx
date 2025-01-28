@@ -20,6 +20,7 @@ import { DEFAULT_GAP, BUTTON_HEIGHT } from '@constants';
 // hooks
 import useBackgroundColor from '@hooks/useBackgroundColor';
 import useForegroundColor from '@hooks/useForegroundColor';
+import useTableAndUp from '@hooks/useTableAndUp';
 
 // types
 import type { TModalProps } from '@types';
@@ -28,6 +29,7 @@ const Modal: FC<TModalProps> = ({ body, closeButton, colorMode = 'light', footer
   // hooks
   const backgroundColor = useBackgroundColor(colorMode);
   const foregroundColor = useForegroundColor(colorMode);
+  const isTabletAndUp = useTableAndUp();
   // memos
   const context = useMemo(() => randomString(8), []);
   // handlers
@@ -82,18 +84,30 @@ const Modal: FC<TModalProps> = ({ body, closeButton, colorMode = 'light', footer
         <Portal>
           <Box
             bottom={0}
-            position="absolute"
+            position="fixed"
             left={0}
             right={0}
             top={0}
           >
-            <Flex align="center" h="full" justify="center" w="full">
+            <Flex
+              h="100vh"
+              w="full"
+              {...isTabletAndUp && {
+                align: 'center',
+                justify: 'center',
+              }}
+            >
               <VStack
                 background={backgroundColor}
-                borderColor={foregroundColor}
-                borderWidth={1}
                 flex={0}
-                minW="400px"
+                h="full"
+                minW="100%"
+                {...isTabletAndUp && {
+                  borderColor: foregroundColor,
+                  borderWidth: 1,
+                  h: 'auto',
+                  minW: '400px',
+                }}
               >
                 {/*header*/}
                 {(closeButton || subtitle || title) && (
