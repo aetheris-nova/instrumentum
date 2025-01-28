@@ -1,3 +1,10 @@
+# [@aetherisnova/ui-components-v1.1.0-beta.2](https://github.com/aetheris-nova/instrumentum/compare/@aetherisnova/ui-components-v1.1.0-beta.1...@aetherisnova/ui-components-v1.1.0-beta.2) (2025-01-28)
+
+
+### Bug Fixes
+
+* **ui-components:** type in tablet and up hook ([805433b](https://github.com/aetheris-nova/instrumentum/commit/805433b2cdb7e9c0e335f514fca1531c18644382))
+
 # [@aetherisnova/ui-components-v1.1.0-beta.1](https://github.com/aetheris-nova/instrumentum/compare/@aetherisnova/ui-components-v1.0.3-beta.1...@aetherisnova/ui-components-v1.1.0-beta.1) (2025-01-28)
 
 
