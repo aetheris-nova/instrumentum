@@ -1,3 +1,10 @@
+# [@aetherisnova/ui-components-v1.1.0-beta.1](https://github.com/aetheris-nova/instrumentum/compare/@aetherisnova/ui-components-v1.0.3-beta.1...@aetherisnova/ui-components-v1.1.0-beta.1) (2025-01-28)
+
+
+### Features
+
+* **ui-components:** responsive components ([#5](https://github.com/aetheris-nova/instrumentum/issues/5)) ([1d866db](https://github.com/aetheris-nova/instrumentum/commit/1d866db285e7a77f17be86131a1f37bf621f580f))
+
 # [@aetherisnova/ui-components-v1.0.3-beta.1](https://github.com/aetheris-nova/instrumentum/compare/@aetherisnova/ui-components-v1.0.2...@aetherisnova/ui-components-v1.0.3-beta.1) (2025-01-28)
 
 
