@@ -10,6 +10,7 @@ jobs:
     permissions:
       pull-requests: read
     outputs:
+      errors: ${{ steps.filter.outputs.errors }}
       types: ${{ steps.filter.outputs.types }}
       ui_components: ${{ steps.filter.outputs.ui_components }}
       utils: ${{ steps.filter.outputs.utils }}
@@ -19,6 +20,8 @@ jobs:
         id: filter
         with:
           filters: |
+            errors:
+              - 'packages/errors/**'
             types:
               - 'packages/types/**'
             ui_components:
@@ -52,6 +55,14 @@ jobs:
   ##
   # package specific
   ##
+
+  lint_build_test_errors:
+    name: "Lint, Build & Test - @aetherisnova/errors"
+    needs: [changed_files, validate_pr_title]
+    if: ${{ needs.changed_files.outputs.errors == 'true' }}
+    uses: ./.github/workflows/lint_build_test.yml
+    with:
+      package_name: "@aetherisnova/errors"
 
   lint_build_test_types:
     name: "Lint, Build & Test - @aetherisnova/types"
