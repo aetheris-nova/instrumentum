@@ -1,8 +1,8 @@
 {
-  "name": "@aetherisnova/utils",
-  "version": "1.2.0",
+  "name": "@aetherisnova/errors",
+  "version": "1.0.0",
   "private": false,
-  "description": "TypeScript utilities for the Aetheris Nova apps/tools.",
+  "description": "TypeScript errors used in the Aetheris Nova apps/tools.",
   "repository": {
     "type": "git",
     "url": "https://github.com/aetheris-nova/instrumentum"
@@ -16,20 +16,12 @@
   ],
   "scripts": {
     "build": "pnpm run clean && vite build",
-    "build:dependencies": "./scripts/prebuild.sh",
+    "build:dependencies": "exit 0",
     "clean": "shx rm -rf dist && shx rm -rf tsconfig.*.tsbuildinfo",
     "generate:index": "tsx ./scripts/generate-index.ts",
     "lint": "eslint .",
     "prettier": "prettier --write \"**/*.{js,json,ts}\"",
-    "test": "vitest run --config vitest.config.ts"
-  },
-  "dependencies": {
-    "@aetherisnova/types": "workspace:^",
-    "@eveworld/types": "^0.0.10",
-    "@stablelib/uuid": "^2.0.1",
-    "axios": "^1.7.9",
-    "bignumber.js": "^9.1.2",
-    "numbro": "^2.5.0"
+    "test": "exit 0"
   },
   "devDependencies": {
     "@eslint/js": "^9.16.0",
@@ -43,7 +35,6 @@
     "typescript-eslint": "^8.18.0",
     "vite": "^6.0.3",
     "vite-plugin-dts": "^4.3.0",
-    "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^2.1.8"
+    "vite-tsconfig-paths": "^5.1.4"
   }
 }

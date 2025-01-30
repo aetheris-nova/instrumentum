@@ -87,11 +87,15 @@ pnpm install
 
 ### 3.1. Packages
 
-| Name                                                  | Visibility | Description                                            | Package                                                                                                                                     |
-|-------------------------------------------------------|------------|--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| [`types`](./packages/types/README.md)                 | `public`   | TypeScript types for the Aetheris Nova apps/tools.     | [![NPM Version](https://img.shields.io/npm/v/%40aetherisnova%2Ftypes)](https://www.npmjs.com/package/%40aetherisnova/types)                 |
-| [`ui-components`](./packages/ui-components/README.md) | `public`   | React UI components used in the Aetheris Nova apps.    | [![NPM Version](https://img.shields.io/npm/v/%40aetherisnova%2Fui-components)](https://www.npmjs.com/package/%40aetherisnova/ui-components) |
-| [`utils`](./packages/utils/README.md)                 | `public`   | TypeScript utilities for the Aetheris Nova apps/tools. | [![NPM Version](https://img.shields.io/npm/v/%40aetherisnova%2Futils)](https://www.npmjs.com/package/%40aetherisnova/utils)                 |
+| Name                                                  | Visibility | Description                                             | Package                                                                                                                                     |
+|-------------------------------------------------------|------------|---------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| [`errors`](./packages/types/README.md)                | `public`   | TypeScript errors used in the Aetheris Nova apps/tools. | [![NPM Version](https://img.shields.io/npm/v/%40aetherisnova%2Ferrors)](https://www.npmjs.com/package/%40aetherisnova/errors)               |
+| [`types`](./packages/types/README.md)                 | `public`   | TypeScript types for the Aetheris Nova apps/tools.      | [![NPM Version](https://img.shields.io/npm/v/%40aetherisnova%2Ftypes)](https://www.npmjs.com/package/%40aetherisnova/types)                 |
+|
+| [`ui-components`](./packages/ui-components/README.md) | `public`   | React UI components used in the Aetheris Nova apps.     | [![NPM Version](https://img.shields.io/npm/v/%40aetherisnova%2Fui-components)](https://www.npmjs.com/package/%40aetherisnova/ui-components) |
+|
+| [`utils`](./packages/utils/README.md)                 | `public`   | TypeScript utilities for the Aetheris Nova apps/tools.  | [![NPM Version](https://img.shields.io/npm/v/%40aetherisnova%2Futils)](https://www.npmjs.com/package/%40aetherisnova/utils)                 |
+|
 
 <sup>[Back to top ^][table-of-contents]</sup>
 

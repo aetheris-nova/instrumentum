@@ -5,23 +5,23 @@
 <div align="center">
 
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-brightgreen.svg)](./LICENSE)
-[![NPM Version](https://img.shields.io/npm/v/%40aetherisnova%2Futils)](https://www.npmjs.com/package/%40aetherisnova/utils)
+[![NPM Version](https://img.shields.io/npm/v/%40aetherisnova%2Ferrors)](https://www.npmjs.com/package/%40aetherisnova/errors)
 
 </div>
 
 <div align="center">
 
-![GitHub Release](https://img.shields.io/github/v/release/aetheris-nova/instrumentum?filter=%40aetherisnova%2Futils*)
-![GitHub Release](https://img.shields.io/github/v/release/aetheris-nova/instrumentum?include_prereleases&filter=%40aetherisnova%2Futils*&label=pre-release)
+![GitHub Release](https://img.shields.io/github/v/release/aetheris-nova/instrumentum?filter=%40aetherisnova%2Ferrors*)
+![GitHub Release](https://img.shields.io/github/v/release/aetheris-nova/instrumentum?include_prereleases&filter=%40aetherisnova%2Ferrors*&label=pre-release)
 
 </div>
 
 <h1 align="center">
-  TypeScript Utilities
+  TypeScript Errors
 </h1>
 
 <p align="center">
-  TypeScript utilities for the Aetheris Nova apps/tools.
+  TypeScript errors used in the Aetheris Nova apps/tools.
 </p>
 
 ---
@@ -41,7 +41,7 @@
 
 You can install the types using:
 ```shell
-pnpm add @aetherisnova/utils
+pnpm add @aetherisnova/errors
 ```
 
 <sup>[Back to top ^][table-of-contents]</sup>
