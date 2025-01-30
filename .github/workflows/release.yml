@@ -49,7 +49,7 @@ jobs:
 
   # **MUST** come before types as it uses it as a dependency
   release_utils:
-    needs: [release_types, release_ui_components]
+    needs: [release_errors, release_types, release_ui_components]
     name: "Release - @aetherisnova/utils"
     uses: ./.github/workflows/publish_release.yml
     with:
