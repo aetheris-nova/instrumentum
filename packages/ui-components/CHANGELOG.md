@@ -1,3 +1,10 @@
+# [@aetherisnova/ui-components-v1.1.0-beta.4](https://github.com/aetheris-nova/instrumentum/compare/@aetherisnova/ui-components-v1.1.0-beta.3...@aetherisnova/ui-components-v1.1.0-beta.4) (2025-01-30)
+
+
+### Features
+
+* **ui-components:** add common client modals ([#9](https://github.com/aetheris-nova/instrumentum/issues/9)) ([7662524](https://github.com/aetheris-nova/instrumentum/commit/7662524f635688c1d0b5cb43739462416304ec06))
+
 # [@aetherisnova/ui-components-v1.1.0-beta.3](https://github.com/aetheris-nova/instrumentum/compare/@aetherisnova/ui-components-v1.1.0-beta.2...@aetherisnova/ui-components-v1.1.0-beta.3) (2025-01-28)
 
 
