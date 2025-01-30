@@ -10,7 +10,6 @@ export type { default as IWorldABIConfig } from './IWorldABIConfig';
 export type { default as IWorldConfig } from './IWorldConfig';
 export type { default as IWorldConfigWithExtendedProps } from './IWorldConfigWithExtendedProps';
 export type { default as IWorldContractConfig } from './IWorldContractConfig';
-export type { default as IWorldInteractionOptions } from './IWorldInteractionOptions';
 export type { default as IWorldRPCURLConfig } from './IWorldRPCURLConfig';
 export type { default as TAdditionalModules } from './TAdditionalModules';
 export type { default as TSmartAssemblyWithAdditionalModules } from './TSmartAssemblyWithAdditionalModules';
