@@ -17,6 +17,15 @@ permissions:
   pull-requests: write # to be able to comment on released pull requests
 
 jobs:
+  release_errors:
+    name: "Release - @aetherisnova/errors"
+    uses: ./.github/workflows/publish_release.yml
+    with:
+      package_dir: "errors"
+      package_name: "@aetherisnova/errors"
+    secrets:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
   release_types:
     name: "Release - @aetherisnova/types"
     uses: ./.github/workflows/publish_release.yml
@@ -26,6 +35,7 @@ jobs:
     secrets:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
+  # **MUST** come before types as it uses it as a dependency
   release_ui_components:
     needs: [release_types]
     name: "Release - @aetherisnova/ui-components"
@@ -36,6 +46,7 @@ jobs:
     secrets:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
+  # **MUST** come before types as it uses it as a dependency
   release_utils:
     needs: [release_types, release_ui_components]
     name: "Release - @aetherisnova/utils"
