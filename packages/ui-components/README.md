@@ -6,7 +6,13 @@
 
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-brightgreen.svg)](./LICENSE)
 [![NPM Version](https://img.shields.io/npm/v/%40aetherisnova%2Fui-components)](https://www.npmjs.com/package/%40aetherisnova/ui-components)
+
+</div>
+
+<div align="center">
+
 ![GitHub Release](https://img.shields.io/github/v/release/aetheris-nova/instrumentum?filter=%40aetherisnova%2Fui-components*)
+![GitHub Release](https://img.shields.io/github/v/release/aetheris-nova/instrumentum?include_prereleases&filter=%40aetherisnova%2Fui-components*&label=pre-release)
 
 </div>
 
