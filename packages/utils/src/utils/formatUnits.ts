@@ -2,15 +2,15 @@ import BigNumber from 'bignumber.js';
 import numbro from 'numbro';
 
 // types
-import type { IOptions } from './types';
+import type { IFormatUnitsOptions } from '@types';
 
 /**
  * Formats a given unit to display on the frontend.
  * @param {BigNumber} input - the unit as a BigNumber.
- * @param {IOptions} options - [optional] various options that affect the returned format.
+ * @param {IFormatUnitsOptions} options - [optional] various options that affect the returned format.
  * @returns {string} the formatted unit.
  */
-export default function formatUnits(input: BigNumber, options?: IOptions): string {
+export default function formatUnits(input: BigNumber, options?: IFormatUnitsOptions): string {
   const decimals: number = options?.decimals || 2;
   const thousandSeparatedOnly: boolean = options?.thousandSeparatedOnly || false;
 

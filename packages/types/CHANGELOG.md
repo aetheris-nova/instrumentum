@@ -1,3 +1,17 @@
+# [@aetherisnova/types-v1.1.1](https://github.com/aetheris-nova/instrumentum/compare/@aetherisnova/types-v1.1.0...@aetherisnova/types-v1.1.1) (2025-01-30)
+
+
+### Bug Fixes
+
+* **types:** add missing system types to index ([#7](https://github.com/aetheris-nova/instrumentum/issues/7)) ([fda8e7c](https://github.com/aetheris-nova/instrumentum/commit/fda8e7cbc44e3b1faadc1514289bee9dd8ecc814))
+
+# [@aetherisnova/types-v1.1.0](https://github.com/aetheris-nova/instrumentum/compare/@aetherisnova/types-v1.0.2...@aetherisnova/types-v1.1.0) (2025-01-30)
+
+
+### Features
+
+* **types:** add client common types ([#6](https://github.com/aetheris-nova/instrumentum/issues/6)) ([237b58a](https://github.com/aetheris-nova/instrumentum/commit/237b58aa391b9c5cfd723ba3363499a4ad61c26b))
+
 # [@aetherisnova/types-v1.0.2](https://github.com/aetheris-nova/instrumentum/compare/@aetherisnova/types-v1.0.1...@aetherisnova/types-v1.0.2) (2025-01-28)
 
 
