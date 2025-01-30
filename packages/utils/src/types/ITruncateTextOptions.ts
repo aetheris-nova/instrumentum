@@ -1,8 +1,8 @@
 /**
  * @property {number} length - [optional] the length of characters to show.
  */
-interface IOptions {
+interface ITruncateTextOptions {
   length?: number;
 }
 
-export default IOptions;
+export default ITruncateTextOptions;
