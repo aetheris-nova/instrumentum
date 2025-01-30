@@ -1,6 +1,6 @@
 {
   "name": "@aetherisnova/utils",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "private": false,
   "description": "TypeScript utilities for the Aetheris Nova apps/tools.",
   "repository": {
@@ -25,7 +25,9 @@
   },
   "dependencies": {
     "@aetherisnova/types": "workspace:^",
+    "@eveworld/types": "^0.0.10",
     "@stablelib/uuid": "^2.0.1",
+    "axios": "^1.7.9",
     "bignumber.js": "^9.1.2",
     "numbro": "^2.5.0"
   },

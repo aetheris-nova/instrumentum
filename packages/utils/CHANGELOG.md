@@ -1,3 +1,10 @@
+# [@aetherisnova/utils-v1.1.0](https://github.com/aetheris-nova/instrumentum/compare/@aetherisnova/utils-v1.0.2...@aetherisnova/utils-v1.1.0) (2025-01-30)
+
+
+### Features
+
+* **utils:** add common client functions ([#8](https://github.com/aetheris-nova/instrumentum/issues/8)) ([8c6dddc](https://github.com/aetheris-nova/instrumentum/commit/8c6dddc28812ec652aabff9147ab03c25d0830fd))
+
 # [@aetherisnova/utils-v1.0.2](https://github.com/aetheris-nova/instrumentum/compare/@aetherisnova/utils-v1.0.1...@aetherisnova/utils-v1.0.2) (2025-01-28)
 
 
