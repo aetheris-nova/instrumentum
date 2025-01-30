@@ -3,9 +3,9 @@
  * @property {boolean} thousandSeparatedOnly - [optional] whether to use a thousand separated only for big numbers.
  * Defaults to false.
  */
-interface IOptions {
+interface IFormatUnitsOptions {
   decimals?: number;
   thousandSeparatedOnly?: boolean;
 }
 
-export default IOptions;
+export default IFormatUnitsOptions;
