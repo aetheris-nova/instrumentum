@@ -32,5 +32,9 @@
     "tsx": "^4.19.2",
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.18.0"
+  },
+  "dependencies": {
+    "@eveworld/types": "^0.0.10",
+    "viem": "2.x"
   }
 }
