@@ -27,6 +27,7 @@ jobs:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   release_types:
+    needs: [release_errors]
     name: "Release - @aetherisnova/types"
     uses: ./.github/workflows/publish_release.yml
     with:
