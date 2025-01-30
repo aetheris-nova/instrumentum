@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.16.0",
+    "@eveworld/types": "^0.0.10",
     "@types/node": "^22.10.1",
     "chalk": "^5.3.0",
     "eslint": "^9.16.0",
@@ -31,10 +32,8 @@
     "globals": "^15.13.0",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2",
-    "typescript-eslint": "^8.18.0"
-  },
-  "dependencies": {
-    "@eveworld/types": "^0.0.10",
-    "viem": "2.x"
+    "typescript-eslint": "^8.18.0",
+    "viem": "2.x",
+    "zustand": "^5.0.3"
   }
 }
