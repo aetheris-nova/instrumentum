@@ -1,6 +1,6 @@
 <div align="center">
-    <img alt="An ornate golden compass surrounded by orbs" src="https://github.com/aetheris-nova/regimen-contractus/blob/main/images/emblem@128x128.png" height="128" />
-    <img alt="The TypeScript logo - a rounded corner blue square with a 'TS' in white" src="https://github.com/aetheris-nova/regimen-contractus/blob/main/images/typescript_icon@128x128.png" height="128" />
+    <img alt="An ornate golden compass surrounded by orbs" src="https://github.com/aetheris-nova/instrumentum/blob/main/images/emblem@128x128.png" height="128" />
+    <img alt="The TypeScript logo - a rounded corner blue square with a 'TS' in white" src="https://github.com/aetheris-nova/instrumentum/blob/main/images/typescript_icon@128x128.png" height="128" />
 </div>
 
 <div align="center">
@@ -62,7 +62,7 @@ pnpm add @aetherisnova/utils
 
 ## 👏 3. How to contribute
 
-Please read the [**contributing guide**](https://github.com/aetheris-nova/regimen-contractus/blob/main/CONTRIBUTING.md) to learn about the development process.
+Please read the [**contributing guide**](https://github.com/aetheris-nova/instrumentum/blob/main/CONTRIBUTING.md) to learn about the development process.
 
 <sup>[Back to top ^][table-of-contents]</sup>
 

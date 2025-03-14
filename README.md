@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="An ornate golden compass surrounded by orbs" src="https://github.com/aetheris-nova/regimen-contractus/blob/main/images/emblem@128x128.png" height="128" />
+  <img alt="An ornate golden compass surrounded by orbs" src="https://github.com/aetheris-nova/instrumentum/blob/main/images/emblem@128x128.png" height="128" />
 </div>
 
 <h1 align="center">
