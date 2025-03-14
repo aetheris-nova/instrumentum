@@ -16,7 +16,7 @@
 
 * [1. Overview](#-1-overview)
   - [1.1. Monorepo project structure](#11-monorepo-project-structure)
-* [2. Getting Started](#-2-getting-started)
+* [2. Getting started](#-2-getting-started)
   - [2.1. Requirements](#21-requirements)
   - [2.2. Installation](#22-installation)
 * [3. Appendix](#-3-appendix)
@@ -62,7 +62,7 @@ Each package **SHOULD** reflect the name of the package, i.e. the `packages/sigi
 * `README.md` - Contains installation and usage instructions relevant to the package.
 * `release.config.mjs` - The local `semantic-release` configuration.
 
-## 🪄 2. Getting Started
+## 🪄 2. Getting started
 
 ### 2.1. Requirements
 
