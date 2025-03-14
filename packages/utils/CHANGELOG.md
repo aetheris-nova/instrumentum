@@ -1,3 +1,10 @@
+# [@aetherisnova/utils-v1.3.0-beta.1](https://github.com/aetheris-nova/instrumentum/compare/@aetherisnova/utils-v1.2.1-beta.1...@aetherisnova/utils-v1.3.0-beta.1) (2025-03-14)
+
+
+### Features
+
+* **utils:** add is owner and elipse text functions ([#16](https://github.com/aetheris-nova/instrumentum/issues/16)) ([bd59391](https://github.com/aetheris-nova/instrumentum/commit/bd593918f5be71163a8400dea291165ff40847fc))
+
 # [@aetherisnova/utils-v1.2.1-beta.1](https://github.com/aetheris-nova/instrumentum/compare/@aetherisnova/utils-v1.2.0...@aetherisnova/utils-v1.2.1-beta.1) (2025-03-14)
 
 
