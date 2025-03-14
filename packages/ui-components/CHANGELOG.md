@@ -1,3 +1,19 @@
+# [@aetherisnova/ui-components-v1.2.0](https://github.com/aetheris-nova/instrumentum/compare/@aetherisnova/ui-components-v1.1.0...@aetherisnova/ui-components-v1.2.0) (2025-03-14)
+
+
+### Bug Fixes
+
+* **ui components:** remove external dependencies from bundle ([#4](https://github.com/aetheris-nova/instrumentum/issues/4)) ([d72c144](https://github.com/aetheris-nova/instrumentum/commit/d72c144ea40361053d8cd9f3554ee9d6e7d154c5))
+* **ui-components:** type in tablet and up hook ([805433b](https://github.com/aetheris-nova/instrumentum/commit/805433b2cdb7e9c0e335f514fca1531c18644382))
+* **ui-components:** typo in hook index file ([4afc446](https://github.com/aetheris-nova/instrumentum/commit/4afc446c30f8a0e4200827a3857b0f597f235c7b))
+
+
+### Features
+
+* **ui-components:** add common client modals ([#9](https://github.com/aetheris-nova/instrumentum/issues/9)) ([7662524](https://github.com/aetheris-nova/instrumentum/commit/7662524f635688c1d0b5cb43739462416304ec06))
+* **ui-components:** add list item component ([#11](https://github.com/aetheris-nova/instrumentum/issues/11)) ([4fba953](https://github.com/aetheris-nova/instrumentum/commit/4fba9538b7c0eb6eb2011ca6b4baafe3cb351d94))
+* **ui-components:** responsive components ([#5](https://github.com/aetheris-nova/instrumentum/issues/5)) ([1d866db](https://github.com/aetheris-nova/instrumentum/commit/1d866db285e7a77f17be86131a1f37bf621f580f))
+
 # [@aetherisnova/ui-components-v1.2.0-beta.2](https://github.com/aetheris-nova/instrumentum/compare/@aetherisnova/ui-components-v1.2.0-beta.1...@aetherisnova/ui-components-v1.2.0-beta.2) (2025-03-14)
 
 
