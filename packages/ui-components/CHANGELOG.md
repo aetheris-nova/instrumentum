@@ -1,3 +1,10 @@
+# [@aetherisnova/ui-components-v1.3.0](https://github.com/aetheris-nova/instrumentum/compare/@aetherisnova/ui-components-v1.2.0...@aetherisnova/ui-components-v1.3.0) (2025-03-14)
+
+
+### Features
+
+* **ui-components:** add icons ([#14](https://github.com/aetheris-nova/instrumentum/issues/14)) ([d07698c](https://github.com/aetheris-nova/instrumentum/commit/d07698c581936247a0dacc96424629a8b5a4db8a))
+
 # [@aetherisnova/ui-components-v1.2.0](https://github.com/aetheris-nova/instrumentum/compare/@aetherisnova/ui-components-v1.1.0...@aetherisnova/ui-components-v1.2.0) (2025-03-14)
 
 
