@@ -8,6 +8,7 @@ export type { default as TEmptyStateProps } from './TEmptyStateProps';
 export type { default as TFieldProps } from './TFieldProps';
 export type { default as TIconButtonProps } from './TIconButtonProps';
 export type { default as TInfoTipProps } from './TInfoTipProps';
+export type { default as TListItemProps } from './TListItemProps';
 export type { default as TLoadingModalProps } from './TLoadingModalProps';
 export type { default as TModalProps } from './TModalProps';
 export type { default as TPulseLoaderProps } from './TPulseLoaderProps';

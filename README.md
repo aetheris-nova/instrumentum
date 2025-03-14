@@ -1,8 +1,6 @@
-<p align="center">
-  <a href="https://aetherisnova.org" target="_blank">
-    <img alt="An ornate golden compass surrounded by orbs" src="docs/images/emblem@128x128.png" height="128" />
-  </a>
-</p>
+<div align="center">
+  <img alt="An ornate golden compass surrounded by orbs" src="https://github.com/aetheris-nova/regimen-contractus/blob/main/images/emblem@128x128.png" height="128" />
+</div>
 
 <h1 align="center">
   Instrumentum
@@ -14,20 +12,20 @@
 
 ---
 
-### Table Of Contents
+### Table of contents
 
 * [1. Overview](#-1-overview)
-  - [1.1. Monorepo Project Structure](#11-monorepo-project-structure)
+  - [1.1. Monorepo project structure](#11-monorepo-project-structure)
 * [2. Getting Started](#-2-getting-started)
   - [2.1. Requirements](#21-requirements)
   - [2.2. Installation](#22-installation)
 * [3. Appendix](#-3-appendix)
   - [3.1. Packages](#31-packages)
-* [4. How To Contribute](#-4-how-to-contribute)
+* [4. How to contribute](#-4-how-to-contribute)
 
 ## 🗂️ 1. Overview
 
-### 1.1. Monorepo Project Structure
+### 1.1. Monorepo project structure
 
 The repo follows the following structure:
 
@@ -89,16 +87,16 @@ pnpm install
 
 | Name                                                  | Visibility | Description                                             | Package                                                                                                                                     |
 |-------------------------------------------------------|------------|---------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| [`errors`](./packages/types/README.md)                | `public`   | TypeScript errors used in the Aetheris Nova apps/tools. | [![NPM Version](https://img.shields.io/npm/v/%40aetherisnova%2Ferrors)](https://www.npmjs.com/package/%40aetherisnova/errors)               |
+| [`errors`](./packages/errors/README.md)               | `public`   | TypeScript errors used in the Aetheris Nova apps/tools. | [![NPM Version](https://img.shields.io/npm/v/%40aetherisnova%2Ferrors)](https://www.npmjs.com/package/%40aetherisnova/errors)               |
 | [`types`](./packages/types/README.md)                 | `public`   | TypeScript types for the Aetheris Nova apps/tools.      | [![NPM Version](https://img.shields.io/npm/v/%40aetherisnova%2Ftypes)](https://www.npmjs.com/package/%40aetherisnova/types)                 |
 | [`ui-components`](./packages/ui-components/README.md) | `public`   | React UI components used in the Aetheris Nova apps.     | [![NPM Version](https://img.shields.io/npm/v/%40aetherisnova%2Fui-components)](https://www.npmjs.com/package/%40aetherisnova/ui-components) |
 | [`utils`](./packages/utils/README.md)                 | `public`   | TypeScript utilities for the Aetheris Nova apps/tools.  | [![NPM Version](https://img.shields.io/npm/v/%40aetherisnova%2Futils)](https://www.npmjs.com/package/%40aetherisnova/utils)                 |
 
 <sup>[Back to top ^][table-of-contents]</sup>
 
-## 👏 4. How To Contribute
+## 👏 4. How to contribute
 
-Please read the [**Contributing Guide**](./CONTRIBUTING.md) to learn about the development process.
+Please read the [**contributing guide**](./CONTRIBUTING.md) to learn about the development process.
 
 <sup>[Back to top ^][table-of-contents]</sup>
 
