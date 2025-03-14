@@ -32,8 +32,8 @@
     "react-icons": "^5.4.0"
   },
   "devDependencies": {
-    "@chakra-ui/react": "3.x",
     "@chakra-ui/color-mode": "^2.2.0",
+    "@chakra-ui/react": "3.x",
     "@emotion/react": ">=11.x",
     "@eslint/js": "^9.16.0",
     "@tanstack/react-query": "^5.x",
