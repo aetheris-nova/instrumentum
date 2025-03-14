@@ -26,7 +26,7 @@ export default async function fetchSmartAssemblyByID<Type extends SmartAssemblie
       } catch (error) {
         if ((error as AxiosError).isAxiosError) {
           if ((error as AxiosError).status === 404) {
-            return null;
+            return resolve(null);
           }
         }
 
