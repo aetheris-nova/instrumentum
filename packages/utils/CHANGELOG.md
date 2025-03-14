@@ -1,3 +1,10 @@
+# [@aetherisnova/utils-v1.2.1-beta.1](https://github.com/aetheris-nova/instrumentum/compare/@aetherisnova/utils-v1.2.0...@aetherisnova/utils-v1.2.1-beta.1) (2025-03-14)
+
+
+### Bug Fixes
+
+* **utils:** resolve not found errors when fetching smart assemblies and items ([#15](https://github.com/aetheris-nova/instrumentum/issues/15)) ([6f6e28e](https://github.com/aetheris-nova/instrumentum/commit/6f6e28e28eddd9d85ad704a17e05eadd6595968b))
+
 # [@aetherisnova/utils-v1.2.0](https://github.com/aetheris-nova/instrumentum/compare/@aetherisnova/utils-v1.1.0...@aetherisnova/utils-v1.2.0) (2025-01-30)
 
 
