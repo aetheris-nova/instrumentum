@@ -43,6 +43,7 @@
     "tsx": "catalog:",
     "typescript": "catalog:",
     "typescript-eslint": "catalog:",
+    "viem": "catalog:",
     "vite": "catalog:",
     "vite-plugin-dts": "catalog:",
     "vite-tsconfig-paths": "catalog:",
