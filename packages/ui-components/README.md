@@ -1,19 +1,19 @@
 <div align="center">
-    <img alt="The React logo - a blue atom that has one particle being circled by three others" src="https://github.com/aetheris-nova/regimen-contractus/blob/main/images/emblem@128x128.png" height="64" />
-    <img alt="The React logo - a blue atom that has one particle being circled by three others" src="https://github.com/aetheris-nova/regimen-contractus/blob/main/images/react_icon@128x128.png" height="64" />
+    <img alt="An ornate golden compass surrounded by orbs" src="https://github.com/aetheris-nova/regimen-contractus/blob/main/images/emblem@128x128.png" height="128" />
+    <img alt="The React logo - a blue atom that has one particle being circled by three others" src="https://github.com/aetheris-nova/regimen-contractus/blob/main/images/react_icon@128x128.png" height="128" />
 </div>
 
 <div align="center">
 
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-brightgreen.svg)](./LICENSE)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-brightgreen.svg)][license]
 [![NPM Version](https://img.shields.io/npm/v/%40aetherisnova%2Fui-components)](https://www.npmjs.com/package/%40aetherisnova/ui-components)
 
 </div>
 
 <div align="center">
 
-![GitHub Release](https://img.shields.io/github/v/release/aetheris-nova/instrumentum?filter=%40aetherisnova%2Fui-components*)
-![GitHub Release](https://img.shields.io/github/v/release/aetheris-nova/instrumentum?include_prereleases&filter=%40aetherisnova%2Fui-components*&label=pre-release)
+[![GitHub Release](https://img.shields.io/github/v/release/aetheris-nova/instrumentum?filter=%40aetherisnova%2Fui-components*)](https://github.com/aetheris-nova/instrumentum/releases)
+[![GitHub Pre-release](https://img.shields.io/github/v/release/aetheris-nova/instrumentum?include_prereleases&filter=%40aetherisnova%2Fui-components*&label=pre-release)](https://github.com/aetheris-nova/instrumentum/releases/latest)
 
 </div>
 
@@ -27,16 +27,16 @@
 
 ---
 
-### Table Of Contents
+### Table of contents
 
-* [1. Getting Started](#-2-getting-started)
-  - [1.1. Installation](#12-installation)
+* [1. Getting started](#-1-getting-started)
+  - [1.1. Installation](#11-installation)
 * [2. Appendix](#-2-appendix)
-  - [2.1. Useful Commands](#21-useful-commands)
-* [3. How To Contribute](#-3-how-to-contribute)
+  - [2.1. Useful commands](#21-useful-commands)
+* [3. How to contribute](#-3-how-to-contribute)
 * [4. License](#-4-license)
 
-## 🪄 1. Getting Started
+## 🪄 1. Getting started
 
 ### 1.1. Installation
 
@@ -49,7 +49,7 @@ pnpm add @aetherisnova/ui-components @chakra-ui/react@3.x @emotion/react @tansta
 
 ## 📑 2. Appendix
 
-### 2.1. Useful Commands
+### 2.1. Useful commands
 
 | Command                   | Description                                                                 |
 |---------------------------|-----------------------------------------------------------------------------|
@@ -60,9 +60,9 @@ pnpm add @aetherisnova/ui-components @chakra-ui/react@3.x @emotion/react @tansta
 
 <sup>[Back to top ^][table-of-contents]</sup>
 
-## 👏 3. How To Contribute
+## 👏 3. How to contribute
 
-Please read the [**Contributing Guide**][contribute] to learn about the development process.
+Please read the [**contributing guide**](https://github.com/aetheris-nova/regimen-contractus/blob/main/CONTRIBUTING.md) to learn about the development process.
 
 <sup>[Back to top ^][table-of-contents]</sup>
 
@@ -73,7 +73,6 @@ Please refer to the [LICENSE][license] file.
 <sup>[Back to top ^][table-of-contents]</sup>
 
 <!-- links -->
-[contribute]: ../../CONTRIBUTING.md
 [license]: LICENSE
 [table-of-contents]: #table-of-contents
 
