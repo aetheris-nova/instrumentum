@@ -1,5 +1,6 @@
 <div align="center">
-    <img alt="The React logo - a blue atom that has one particle being circled by three others" src="docs/images/icon@128x128.png" height="64" />
+    <img alt="The React logo - a blue atom that has one particle being circled by three others" src="https://github.com/aetheris-nova/regimen-contractus/blob/main/images/emblem@128x128.png" height="64" />
+    <img alt="The React logo - a blue atom that has one particle being circled by three others" src="https://github.com/aetheris-nova/regimen-contractus/blob/main/images/react_icon@128x128.png" height="64" />
 </div>
 
 <div align="center">

@@ -1,8 +1,6 @@
-<p align="center">
-  <a href="https://aetherisnova.org" target="_blank">
-    <img alt="An ornate golden compass surrounded by orbs" src="docs/images/emblem@128x128.png" height="128" />
-  </a>
-</p>
+<div align="center">
+  <img alt="An ornate golden compass surrounded by orbs" src="https://github.com/aetheris-nova/regimen-contractus/blob/main/images/emblem@128x128.png" height="128" />
+</div>
 
 <h1 align="center">
   Instrumentum
