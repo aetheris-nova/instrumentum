@@ -8,21 +8,30 @@ import { DEFAULT_GAP } from '@/constants';
 import type { PulseLoaderProps, Sizes } from '@/types';
 
 const PulseLoader: FC<PulseLoaderProps> = ({ size = 'md' }) => {
-  const dotSize = useMemo(() => (({
-    xs: '0.25rem',
-      sm: '0.375rem',
-      md: '0.5rem',
-      lg: '0.75rem',
-      xl: '1rem',
-      '2xl': '1.25rem',
-      '3xl': '1.5rem',
-      '4xl': '2rem',
-  } as Record<Sizes, string>)[size]), [size]);
-  const dotProps = useMemo(() => ({
-    bg: 'currentcolor',
-    h: dotSize,
-    w: dotSize,
-  }), [dotSize]);
+  const dotSize = useMemo(
+    () =>
+      (
+        ({
+          xs: '0.25rem',
+          sm: '0.375rem',
+          md: '0.5rem',
+          lg: '0.75rem',
+          xl: '1rem',
+          '2xl': '1.25rem',
+          '3xl': '1.5rem',
+          '4xl': '2rem',
+        }) as Record<Sizes, string>
+      )[size],
+    [size]
+  );
+  const dotProps = useMemo(
+    () => ({
+      bg: 'currentcolor',
+      h: dotSize,
+      w: dotSize,
+    }),
+    [dotSize]
+  );
 
   return (
     <HStack gap={DEFAULT_GAP / 3}>

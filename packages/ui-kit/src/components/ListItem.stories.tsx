@@ -63,7 +63,6 @@ export const WithIcon: Story = {
   },
 };
 
-
 export const WithLibraryIcon: Story = {
   args: {
     icon: (

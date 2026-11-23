@@ -17,23 +17,13 @@ const LoadingModal: FC<LoadingModalProps> = ({ message, onClose, open, title }) 
 
   return (
     <Modal
-      body={(
-        <VStack
-          align="center"
-          flex={1}
-          gap={DEFAULT_GAP - 2}
-          justify="center"
-          w="full"
-        >
+      body={
+        <VStack align="center" flex={1} gap={DEFAULT_GAP - 2} justify="center" w="full">
           <PulseLoader />
 
-          {message && (
-            <Text>
-              {message}
-            </Text>
-          )}
+          {message && <Text>{message}</Text>}
         </VStack>
-      )}
+      }
       open={open}
       onClose={handleClose}
       title={title}

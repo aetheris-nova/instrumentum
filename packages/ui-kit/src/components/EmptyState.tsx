@@ -4,37 +4,29 @@ import { forwardRef } from 'react';
 // types
 import type { EmptyStateProps } from '@/types';
 
-const EmptyState = forwardRef<HTMLDivElement, EmptyStateProps>(({ title, description, icon, children, ...otherProps }, ref) => {
-  return (
-    <ChakraEmptyState.Root ref={ref} {...otherProps}>
-      <ChakraEmptyState.Content>
-        {icon && (
-          <ChakraEmptyState.Indicator>
-            {icon}
-          </ChakraEmptyState.Indicator>
-        )}
+const EmptyState = forwardRef<HTMLDivElement, EmptyStateProps>(
+  ({ title, description, icon, children, ...otherProps }, ref) => {
+    return (
+      <ChakraEmptyState.Root ref={ref} {...otherProps}>
+        <ChakraEmptyState.Content>
+          {icon && <ChakraEmptyState.Indicator>{icon}</ChakraEmptyState.Indicator>}
 
-        {description ? (
-          <VStack textAlign="center">
-            <ChakraEmptyState.Title>
-              {title.toUpperCase()}
-            </ChakraEmptyState.Title>
+          {description ? (
+            <VStack textAlign="center">
+              <ChakraEmptyState.Title>{title.toUpperCase()}</ChakraEmptyState.Title>
 
-            <ChakraEmptyState.Description>
-              {description}
-            </ChakraEmptyState.Description>
-          </VStack>
-        ) : (
-          <ChakraEmptyState.Title>
-            {title.toUpperCase()}
-          </ChakraEmptyState.Title>
-        )}
+              <ChakraEmptyState.Description>{description}</ChakraEmptyState.Description>
+            </VStack>
+          ) : (
+            <ChakraEmptyState.Title>{title.toUpperCase()}</ChakraEmptyState.Title>
+          )}
 
-        {children}
-      </ChakraEmptyState.Content>
-    </ChakraEmptyState.Root>
-  );
-});
+          {children}
+        </ChakraEmptyState.Content>
+      </ChakraEmptyState.Root>
+    );
+  }
+);
 
 EmptyState.displayName = 'EmptyState';
 

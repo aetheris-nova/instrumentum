@@ -43,7 +43,9 @@ export const TitleOnly: Story = {
 export const WithTwoFooterButtons: Story = {
   args: {
     footer: [
-      <Button key="cancel" scheme="secondary">Cancel</Button>,
+      <Button key="cancel" scheme="secondary">
+        Cancel
+      </Button>,
       <Button key="confirm">Undock</Button>,
     ],
   },
@@ -52,8 +54,12 @@ export const WithTwoFooterButtons: Story = {
 export const WithThreeFooterButtons: Story = {
   args: {
     footer: [
-      <Button key="cancel" scheme="secondary">Cancel</Button>,
-      <Button key="save" scheme="secondary">Save for later</Button>,
+      <Button key="cancel" scheme="secondary">
+        Cancel
+      </Button>,
+      <Button key="save" scheme="secondary">
+        Save for later
+      </Button>,
       <Button key="confirm">Undock</Button>,
     ],
   },

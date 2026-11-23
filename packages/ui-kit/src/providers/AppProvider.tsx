@@ -16,7 +16,13 @@ const AppProvider: FC<AppProviderProps> = ({ children, forcedColorMode }) => {
 
   return (
     <ChakraProvider value={theme}>
-      <ThemeProvider attribute="class" defaultTheme="system" disableTransitionOnChange enableSystem forcedTheme={forcedColorMode}>
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        disableTransitionOnChange
+        enableSystem
+        forcedTheme={forcedColorMode}
+      >
         <EveFrontierProvider queryClient={queryClient}>{children}</EveFrontierProvider>
       </ThemeProvider>
     </ChakraProvider>

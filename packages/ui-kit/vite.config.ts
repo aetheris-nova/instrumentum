@@ -15,13 +15,7 @@ export default mergeConfig(
       },
       outDir: 'dist',
       rollupOptions: {
-        external: [
-          '@chakra-ui/react',
-          '@emotion/react',
-          '@tanstack/react-query',
-          'react',
-          'react/jsx-runtime',
-        ],
+        external: ['@chakra-ui/react', '@emotion/react', '@tanstack/react-query', 'react', 'react/jsx-runtime'],
       },
     },
     plugins: [

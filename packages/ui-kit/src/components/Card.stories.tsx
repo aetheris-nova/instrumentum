@@ -11,9 +11,7 @@ const meta = {
   args: {
     borderWidth: 1,
     children: (
-      <Text p={DEFAULT_GAP / 2}>
-        Docked at Quantum Core. All systems nominal and the cargo hold is sealed.
-      </Text>
+      <Text p={DEFAULT_GAP / 2}>Docked at Quantum Core. All systems nominal and the cargo hold is sealed.</Text>
     ),
     subtitle: 'Jita IV',
     title: 'Ship status',

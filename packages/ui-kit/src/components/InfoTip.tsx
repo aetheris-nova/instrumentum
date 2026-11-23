@@ -1,7 +1,5 @@
 import { IconButton } from '@chakra-ui/react';
-import {
-  forwardRef,
-} from 'react';
+import { forwardRef } from 'react';
 import { GrCircleInformation } from 'react-icons/gr';
 
 // components
@@ -10,18 +8,10 @@ import ToggleTip from './ToggleTip';
 // types
 import type { InfoTipProps } from '@/types';
 
-const InfoTip = forwardRef<HTMLDivElement, InfoTipProps>(({
-  children,
-  ...otherProps
-}, ref) => {
+const InfoTip = forwardRef<HTMLDivElement, InfoTipProps>(({ children, ...otherProps }, ref) => {
   return (
     <ToggleTip content={children} {...otherProps} ref={ref}>
-      <IconButton
-        variant="ghost"
-        aria-label="info"
-        size="2xs"
-        colorPalette="gray"
-      >
+      <IconButton variant="ghost" aria-label="info" size="2xs" colorPalette="gray">
         <GrCircleInformation />
       </IconButton>
     </ToggleTip>

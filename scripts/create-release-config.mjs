@@ -19,20 +19,20 @@ export default function createReleaseConfig(packageName) {
       '@semantic-release/commit-analyzer',
       '@semantic-release/release-notes-generator',
       '@semantic-release/changelog',
-      '@anolilab/semantic-release-pnpm',
+      '@semantic-release/npm',
       [
         '@semantic-release/git',
         {
           assets: ['package.json', 'CHANGELOG.md'],
           message: `chore(release): ${packageName}-v$\{nextRelease.version}
 
-$\{nextRelease.notes}`
-        }
+$\{nextRelease.notes}`,
+        },
       ],
       [
         '@semantic-release/github',
         {
-          releasedLabels: ['🚀 released']
+          releasedLabels: ['🚀 released'],
         },
       ],
     ],

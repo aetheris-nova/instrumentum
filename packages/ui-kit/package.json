@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/aetheris-nova/instrumentum"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "CC0-1.0",
   "type": "module",
   "main": "dist/index.js",

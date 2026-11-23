@@ -33,7 +33,7 @@ jobs:
     if: ${{ needs.changed_files.outputs.ui_kit == 'true' }}
     uses: ./.github/workflows/pull_request_checks_call.yml
     with:
-      package_name: "@aetherisnova/utilities"
+      package_name: "@aetherisnova/ui-kit"
 
   pull_request_checks_utilities:
     name: "Pull Request Checks - @aetherisnova/utilities"

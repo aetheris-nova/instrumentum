@@ -9,21 +9,10 @@ import type { CardProps } from '@/types';
 
 const Card: FC<PropsWithChildren<CardProps>> = ({ children, subtitle, title, ...stackProps }) => {
   return (
-    <VStack
-      align="start"
-      borderColor="fg"
-      gap={0}
-      {...stackProps}
-    >
+    <VStack align="start" borderColor="fg" gap={0} {...stackProps}>
       {/*header*/}
       {(subtitle || title) && (
-        <HStack
-          borderColor="fg"
-          borderBottomWidth={1}
-          px={DEFAULT_GAP / 2}
-          py={1}
-          w="full"
-        >
+        <HStack borderColor="fg" borderBottomWidth={1} px={DEFAULT_GAP / 2} py={1} w="full">
           {title && (
             <Heading fontSize="md" w="full">
               {title.toUpperCase()}
@@ -32,9 +21,7 @@ const Card: FC<PropsWithChildren<CardProps>> = ({ children, subtitle, title, ...
 
           <Spacer />
 
-          {subtitle && (
-            <Text fontSize="sm">{subtitle}</Text>
-          )}
+          {subtitle && <Text fontSize="sm">{subtitle}</Text>}
         </HStack>
       )}
 

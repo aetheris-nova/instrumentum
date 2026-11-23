@@ -10,7 +10,15 @@ import useTabletAndUp from '@/hooks/useTabletAndUp';
 // types
 import type { ListItemProps } from '@/types';
 
-const ListItem: FC<ListItemProps> = ({ icon, isExternalLink, link, title, secondarySubtitle, secondaryTitle, subtitle }) => {
+const ListItem: FC<ListItemProps> = ({
+  icon,
+  isExternalLink,
+  link,
+  title,
+  secondarySubtitle,
+  secondaryTitle,
+  subtitle,
+}) => {
   // hooks
   const isTabletAndUp = useTabletAndUp();
   // memos
@@ -56,20 +64,15 @@ const ListItem: FC<ListItemProps> = ({ icon, isExternalLink, link, title, second
           >
             {_title}
           </a>
-        ) : link()}
+        ) : (
+          link()
+        )}
       </ChakraLink>
     );
   }, [isExternalLink, isTabletAndUp, link, title]);
 
   return (
-    <HStack
-      align="center"
-      borderBottomWidth={1}
-      borderColor="fg"
-      justify="start"
-      p={DEFAULT_GAP / 3}
-      w="full"
-    >
+    <HStack align="center" borderBottomWidth={1} borderColor="fg" justify="start" p={DEFAULT_GAP / 3} w="full">
       {_icon}
 
       <VStack
@@ -102,14 +105,7 @@ const ListItem: FC<ListItemProps> = ({ icon, isExternalLink, link, title, second
         )}
       </VStack>
 
-      <VStack
-        align="end"
-        gap={0}
-        h="full"
-        justify="space-between"
-        pl={DEFAULT_GAP / 3}
-        w="full"
-      >
+      <VStack align="end" gap={0} h="full" justify="space-between" pl={DEFAULT_GAP / 3} w="full">
         {/*secondary title*/}
         {secondaryTitle && (
           <Text

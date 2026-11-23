@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/aetheris-nova/instrumentum"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "CC0-1.0",
   "type": "module",
   "main": "dist/index.js",
@@ -16,6 +19,7 @@
   ],
   "scripts": {
     "build": "pnpm run clean && vite build",
+    "build:dependencies": "exit 0",
     "clean": "shx rm -rf dist && shx rm -rf tsconfig.*.tsbuildinfo",
     "lint": "eslint .",
     "prettier": "prettier --write \"**/*.{js,json,jsx,ts,tsx}\"",
