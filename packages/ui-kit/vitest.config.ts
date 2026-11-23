@@ -1,7 +1,7 @@
 import { defineConfig, mergeConfig } from 'vitest/config';
 
 // configs
-import commonConfig from './vite.common.config';
+import commonConfig from './vite.common.config.ts';
 
 export default mergeConfig(
   commonConfig,

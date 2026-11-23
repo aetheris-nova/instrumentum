@@ -1,8 +1,10 @@
-import type { SystemContext as ChakraSystemContext } from '@chakra-ui/react';
 import { PropsWithChildren } from 'react';
 
+// types
+import type ColorMode from './ColorMode';
+
 interface Props {
-  theme?: ChakraSystemContext;
+  forcedColorMode?: ColorMode;
 }
 type AppProviderProps = PropsWithChildren<Props>;
 

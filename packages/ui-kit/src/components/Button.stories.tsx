@@ -6,7 +6,6 @@ import Button from './Button';
 const meta = {
   args: {
     children: 'Dock ship',
-    colorMode: 'light',
     disabled: false,
     scheme: 'primary',
   },
@@ -14,10 +13,6 @@ const meta = {
     children: {
       control: 'text',
       description: 'The label. It is upper-cased by the component.',
-    },
-    colorMode: {
-      control: 'inline-radio',
-      options: ['light', 'dark'],
     },
     scheme: {
       control: 'inline-radio',
@@ -66,9 +61,6 @@ export const Loading: Story = {
 };
 
 export const DarkMode: Story = {
-  args: {
-    colorMode: 'dark',
-  },
   globals: {
     theme: 'dark',
   },

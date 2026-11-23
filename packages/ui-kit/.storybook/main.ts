@@ -1,5 +1,4 @@
 import type { StorybookConfig } from '@storybook/react-vite';
-import tsconfigPaths from 'vite-tsconfig-paths';
 
 const config: StorybookConfig = {
   addons: ['@storybook/addon-docs', '@storybook/addon-a11y', '@storybook/addon-themes'],
@@ -7,14 +6,24 @@ const config: StorybookConfig = {
     name: '@storybook/react-vite',
     options: {},
   },
-  stories: ['../src/**/*.mdx', '../src/**/*.stories.@(ts|tsx)'],
+  /**
+   * Storybook automatically composes the published Storybook of any dependency that declares a
+   * `storybook` field in its `package.json` - `@chakra-ui/react` does.
+   */
+  refs: {
+    '@chakra-ui/react': {
+      disable: true,
+    },
+  },
+  stories: ['../src/**/*.stories.@(ts|tsx)'],
   typescript: {
     reactDocgen: 'react-docgen-typescript',
-  },
-  viteFinal: async (config) => {
-    config.plugins = [...(config.plugins ?? []), tsconfigPaths()];
-
-    return config;
+    reactDocgenTypescriptOptions: {
+      // `preview.tsx` has no components to document, and docgen warns that it is outside `src`.
+      exclude: ['.storybook/**'],
+      // without this every Chakra style prop is documented as one of the component's own.
+      propFilter: (prop) => !!prop.parent && !/node_modules/.test(prop.parent.fileName),
+    },
   },
 };
 

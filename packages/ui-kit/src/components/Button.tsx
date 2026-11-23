@@ -1,45 +1,35 @@
 import { Button as ChakraButton, Heading } from '@chakra-ui/react';
-import {
-  forwardRef,
-} from 'react';
+import { forwardRef } from 'react';
 
 // constants
-import { BUTTON_HEIGHT } from '@constants';
-
-// hooks
-import useBackgroundColor from '@hooks/useBackgroundColor';
-import useForegroundColor from '@hooks/useForegroundColor';
+import { BUTTON_HEIGHT } from '@/constants';
 
 // types
-import type { TButtonProps } from '@types';
+import type { ButtonProps } from '@/types';
 
-const Button = forwardRef<HTMLButtonElement, TButtonProps>(({ children, colorMode = 'light', scheme, ...buttonProps }, ref) => {
-  // hooks
-  const backgroundColor = useBackgroundColor(colorMode);
-  const foregroundColor = useForegroundColor(colorMode);
+const Button = forwardRef<HTMLButtonElement, ButtonProps>(({ children, scheme = 'primary', ...buttonProps }, ref) => {
+  const isSecondary = scheme === 'secondary';
 
   return (
     <ChakraButton
       _hover={{
-        bg: scheme === 'secondary' ? foregroundColor : backgroundColor,
-        color: scheme === 'secondary' ? backgroundColor : foregroundColor,
+        bg: isSecondary ? 'fg' : 'bg',
+        color: isSecondary ? 'bg' : 'fg',
       }}
-      background={scheme === 'secondary' ? backgroundColor : foregroundColor}
-      borderColor={foregroundColor}
+      bg={isSecondary ? 'bg' : 'fg'}
+      borderColor="fg"
       borderRadius={0}
       borderWidth={buttonProps.variant === 'ghost' ? 0 : 1}
-      color={scheme === 'secondary' ? foregroundColor : backgroundColor}
+      color={isSecondary ? 'fg' : 'bg'}
       colorPalette="gray"
-      fontFamily="{fonts.mono}"
+      fontFamily="mono"
       minH={BUTTON_HEIGHT}
       textTransform="uppercase"
-      transition="ease-in-out 300ms"
+      transition="ease 300ms"
       {...buttonProps}
       ref={ref}
     >
-      <Heading fontSize="sm">
-        {children.toUpperCase()}
-      </Heading>
+      <Heading fontSize="sm">{children.toUpperCase()}</Heading>
     </ChakraButton>
   );
 });
