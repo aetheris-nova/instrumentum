@@ -1,7 +1,7 @@
 import { Icon, IconProps } from '@chakra-ui/react';
 import type { FC } from 'react';
 
-const EvEVEToken: FC<IconProps> = (props) => {
+const EFEVEToken: FC<IconProps> = (props) => {
   return (
     <Icon {...props}>
       <svg viewBox="0 0 20 26">
@@ -14,4 +14,4 @@ const EvEVEToken: FC<IconProps> = (props) => {
   );
 };
 
-export default EvEVEToken;
+export default EFEVEToken;

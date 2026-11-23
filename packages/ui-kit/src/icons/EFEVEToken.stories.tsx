@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
 // components
-import EvEVEToken from './EvEVEToken';
+import EFEVEToken from './EFEVEToken';
 
 const meta = {
   args: {
@@ -13,12 +13,12 @@ const meta = {
       options: ['xs', 'sm', 'md', 'lg', 'xl'],
     },
   },
-  component: EvEVEToken,
+  component: EFEVEToken,
   parameters: {
     layout: 'centered',
   },
-  title: 'Icons/EvEVEToken',
-} satisfies Meta<typeof EvEVEToken>;
+  title: 'Icons/EFEVEToken',
+} satisfies Meta<typeof EFEVEToken>;
 
 type Story = StoryObj<typeof meta>;
 

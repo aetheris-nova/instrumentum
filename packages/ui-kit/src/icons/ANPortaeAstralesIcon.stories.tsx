@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
 // components
-import EvGas from './EvGas';
+import ANPortaeAstralesIcon from './ANPortaeAstralesIcon';
 
 const meta = {
   args: {
@@ -13,12 +13,12 @@ const meta = {
       options: ['xs', 'sm', 'md', 'lg', 'xl'],
     },
   },
-  component: EvGas,
+  component: ANPortaeAstralesIcon,
   parameters: {
     layout: 'centered',
   },
-  title: 'Icons/EvGas',
-} satisfies Meta<typeof EvGas>;
+  title: 'Icons/ANPortaeAstralesIcon',
+} satisfies Meta<typeof ANPortaeAstralesIcon>;
 
 type Story = StoryObj<typeof meta>;
 

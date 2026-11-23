@@ -1,7 +1,7 @@
 import { Icon, IconProps } from '@chakra-ui/react';
 import type { FC } from 'react';
 
-const EvGas: FC<IconProps> = (props) => {
+const EFGas: FC<IconProps> = (props) => {
   return (
     <Icon {...props}>
       <svg viewBox="0 0 17 23">
@@ -14,4 +14,4 @@ const EvGas: FC<IconProps> = (props) => {
   );
 };
 
-export default EvGas;
+export default EFGas;

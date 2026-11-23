@@ -4,12 +4,12 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 import IconButton from './IconButton';
 
 // icons
-import { EvGas } from '@/icons';
+import { EFGas } from '@/icons';
 
 const meta = {
   args: {
     'aria-label': 'Refuel ship',
-    children: <EvGas />,
+    children: <EFGas />,
     disabled: false,
     scheme: 'primary',
   },
