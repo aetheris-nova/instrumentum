@@ -30,8 +30,6 @@ const meta = {
   title: 'Components/Button',
 } satisfies Meta<typeof Button>;
 
-export default meta;
-
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {};
@@ -65,3 +63,5 @@ export const DarkMode: Story = {
     theme: 'dark',
   },
 };
+
+export default meta;
