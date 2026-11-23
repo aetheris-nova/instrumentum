@@ -1,0 +1,50 @@
+{
+  "name": "@aetherisnova/utilities",
+  "version": "1.0.0",
+  "private": false,
+  "description": "TypeScript utilities for the Aetheris Nova apps/tools.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aetheris-nova/instrumentum"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "CC0-1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "pnpm run clean && vite build",
+    "build:dependencies": "exit 0",
+    "clean": "shx rm -rf dist && shx rm -rf tsconfig.*.tsbuildinfo",
+    "lint": "eslint .",
+    "prettier": "prettier --write \"**/*.{js,json,jsx,ts,tsx}\"",
+    "test": "vitest run --config vitest.config.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.build.json"
+  },
+  "dependencies": {
+    "@stablelib/uuid": "^2.0.1",
+    "bignumber.js": "^9.1.2",
+    "numbro": "^2.5.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "catalog:",
+    "@types/node": "catalog:",
+    "chalk": "catalog:",
+    "eslint": "catalog:",
+    "eslint-config-prettier": "catalog:",
+    "globals": "catalog:",
+    "prettier": "catalog:",
+    "shx": "catalog:",
+    "tsx": "catalog:",
+    "typescript": "catalog:",
+    "typescript-eslint": "catalog:",
+    "unplugin-dts": "catalog:",
+    "vite": "catalog:",
+    "vitest": "catalog:"
+  }
+}
