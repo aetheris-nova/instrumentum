@@ -24,6 +24,31 @@ export default function createSystem(): SystemContext {
     },
     theme: {
       keyframes: {
+        /**
+         * Walks an element around the four edges of a square, one `--snake-track` long. The
+         * stepped timing per edge is what gives it the hop of a snake on a grid.
+         */
+        snake: {
+          '0%': {
+            animationTimingFunction: 'steps(4, end)',
+            transform: 'translate(0, 0)',
+          },
+          '25%': {
+            animationTimingFunction: 'steps(4, end)',
+            transform: 'translate(var(--snake-track), 0)',
+          },
+          '50%': {
+            animationTimingFunction: 'steps(4, end)',
+            transform: 'translate(var(--snake-track), var(--snake-track))',
+          },
+          '75%': {
+            animationTimingFunction: 'steps(4, end)',
+            transform: 'translate(0, var(--snake-track))',
+          },
+          '100%': {
+            transform: 'translate(0, 0)',
+          },
+        },
         pulse: {
           '0%, 100%': {
             opacity: 1,

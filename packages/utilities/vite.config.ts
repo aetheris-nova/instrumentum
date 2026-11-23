@@ -14,15 +14,6 @@ export default mergeConfig(
         fileName: 'index',
       },
       outDir: 'dist',
-      rollupOptions: {
-        external: [
-          '@chakra-ui/react',
-          '@emotion/react',
-          '@tanstack/react-query',
-          'react',
-          'react/jsx-runtime',
-        ],
-      },
     },
     plugins: [
       dts({
