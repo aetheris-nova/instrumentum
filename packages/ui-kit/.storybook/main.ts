@@ -20,7 +20,7 @@ const config: StorybookConfig = {
     reactDocgen: 'react-docgen-typescript',
     reactDocgenTypescriptOptions: {
       // `preview.tsx` has no components to document, and docgen warns that it is outside `src`.
-      exclude: ['.storybook/**'],
+      exclude: ['.storybook/**', '**/node_modules/**'],
       // without this every Chakra style prop is documented as one of the component's own.
       propFilter: (prop) => !!prop.parent && !/node_modules/.test(prop.parent.fileName),
     },

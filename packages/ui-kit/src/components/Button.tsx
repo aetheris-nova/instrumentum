@@ -1,6 +1,9 @@
 import { Button as ChakraButton, Heading } from '@chakra-ui/react';
 import { forwardRef } from 'react';
 
+// components
+import PulseLoader from './PulseLoader';
+
 // constants
 import { BUTTON_HEIGHT } from '@/constants';
 
@@ -24,6 +27,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(({ children, scheme = 
       colorPalette="gray"
       fontFamily="mono"
       minH={BUTTON_HEIGHT}
+      spinner={<PulseLoader size="sm" />}
       textTransform="uppercase"
       transition="ease 300ms"
       {...buttonProps}
