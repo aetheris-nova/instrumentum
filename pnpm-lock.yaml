@@ -9,6 +9,9 @@ catalogs:
     '@eslint/js':
       specifier: ^10.0.1
       version: 10.0.1
+    '@mysten/sui':
+      specifier: ^3.0.1
+      version: 3.0.1
     '@types/node':
       specifier: ^26
       version: 26.6.6
@@ -138,7 +141,7 @@ importers:
         specifier: ^5.3.1
         version: 5.3.1
       '@mysten/sui':
-        specifier: ^3.0.1
+        specifier: 'catalog:'
         version: 3.0.1(typescript@6.0.3)
       '@tanstack/react-query':
         specifier: ^5.96.2
@@ -228,6 +231,9 @@ importers:
 
   packages/utilities:
     dependencies:
+      '@mysten/sui':
+        specifier: 'catalog:'
+        version: 3.0.1(typescript@6.0.3)
       '@stablelib/uuid':
         specifier: ^2.0.1
         version: 2.0.1
