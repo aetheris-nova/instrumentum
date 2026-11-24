@@ -27,6 +27,7 @@
     "typecheck": "tsc --noEmit -p tsconfig.build.json"
   },
   "dependencies": {
+    "@mysten/sui": "catalog:",
     "@stablelib/uuid": "^2.0.1",
     "bignumber.js": "^9.1.2",
     "numbro": "^2.5.0"

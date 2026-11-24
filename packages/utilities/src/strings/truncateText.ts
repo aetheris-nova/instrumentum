@@ -1,5 +1,5 @@
 // types
-import type { TruncateTextOptions } from '@/types';
+import type { TruncateTextOptions } from './types';
 
 /**
  * Utility function to truncate text and add an ellipsis to the end. Defaults to 5 characters.

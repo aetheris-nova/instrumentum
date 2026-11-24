@@ -2,7 +2,7 @@ import BigNumber from 'bignumber.js';
 import numbro from 'numbro';
 
 // types
-import type { FormatUnitsOptions } from '@/types';
+import type { FormatUnitsOptions } from './types';
 
 /**
  * Formats a given unit to display on the frontend.

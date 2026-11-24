@@ -1,4 +1,4 @@
-import type { Logger, LogLevel } from '@/types';
+import type { Logger, LogLevel } from './types';
 
 /**
  * Creates a logger that can set whether the logs appear based on the level.

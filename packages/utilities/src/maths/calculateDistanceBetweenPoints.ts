@@ -1,6 +1,6 @@
 import BigNumber from 'bignumber.js';
 
-import type { Location } from '@/types';
+import type { Location } from './types';
 
 /**
  * Calculates the distance between two points in 3D space. This algorithm uses Euclidean distance formula.
