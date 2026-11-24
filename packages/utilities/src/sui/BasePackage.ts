@@ -1,14 +1,16 @@
 import type { SuiClientTypes } from '@mysten/sui/client';
 import type { GrpcSimulateTransactionResult, GrpcTransactionResult, SuiGrpcClient } from '@mysten/sui/grpc';
 import { Transaction } from '@mysten/sui/transactions';
+import { SUI_FRAMEWORK_ADDRESS } from '@mysten/sui/utils';
 
 // types
 import type { Logger } from '@/logging/types';
 import type {
   ExecuteOptions,
   ExecuteTransactionIncludes,
-  NewBaseClientOptions,
+  NewBasePackageOptions,
   PublishOptions,
+  PublishResult,
   SimulateOptions,
   SimulateTransactionIncludes,
 } from '@/sui/types';
@@ -17,20 +19,12 @@ import type {
 import objectOfType from './objectOfType';
 import createLogger from '@/logging/createLogger';
 
-/**
- * The base of every Sui client.
- *
- * It holds only what calling into a package always requires — a client, the package ID, and a
- * signer — along with the plumbing for reading and writing. It deliberately holds **no** object
- * handles: a package's state could be one shared object, many owned objects, a capability, or
- * nothing at all, so those belong to the client that knows the shape.
- */
-export default class BaseClient {
+export default class BasePackage {
   protected readonly _gRPCClient: SuiGrpcClient;
   protected readonly _logger: Logger;
   protected readonly _packageID: string;
 
-  constructor({ gRPCClient, logLevel = 'error', packageID }: NewBaseClientOptions) {
+  constructor({ gRPCClient, logLevel = 'error', packageID }: NewBasePackageOptions) {
     this._gRPCClient = gRPCClient;
     this._logger = createLogger(logLevel);
     this._packageID = packageID;
@@ -48,16 +42,19 @@ export default class BaseClient {
    * `sui move build --dump-bytecode-as-base64` emits. Compiling is deliberately not done here, as it
    * shells out to the `sui` CLI and would stop this package from bundling for the browser.
    *
+   * The result carries the publish transaction as well as the client, because a package's `init` runs
+   * during the publish and the objects it created appear nowhere else — see `PublishResult`.
+   *
    * @param {PublishOptions} options - The client, the signer, and the compiled modules.
-   * @returns {Promise<T>} A promise that resolves to a client bound to the published package.
+   * @returns {Promise<PublishResult<T>>} A promise that resolves to the client, the package ID, the `UpgradeCap` ID and the publish transaction.
    * @throws {Error} If the publishing of the package failed.
    * @public
    * @static
    */
-  public static async publish<T extends BaseClient>(
-    this: new (options: NewBaseClientOptions) => T,
+  public static async publish<T extends BasePackage>(
+    this: new (options: NewBasePackageOptions) => T,
     { dependencies, gRPCClient, logLevel, modules, signer }: PublishOptions
-  ): Promise<T> {
+  ): Promise<PublishResult<T>> {
     const __function = 'publish';
     const logger = createLogger(logLevel);
     const transaction = new Transaction();
@@ -91,11 +88,15 @@ export default class BaseClient {
 
     logger.debug(`${__function}: published package`, packageID);
 
-    return new this({
-      gRPCClient,
-      packageID,
-      logLevel,
-    });
+    return {
+      client: new this({
+        gRPCClient,
+        packageID,
+        logLevel,
+      }),
+      transaction: executed,
+      upgradeCapID: objectOfType(executed, `${SUI_FRAMEWORK_ADDRESS}::package::UpgradeCap`),
+    };
   }
 
   /**

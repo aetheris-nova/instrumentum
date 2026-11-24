@@ -8,10 +8,10 @@ import type { LogLevel } from '@/logging';
  * @property {boolean} logLevel - [optional] the log level. Defaults to `error`.
  * @property {string} packageID - [required] the ID of the published package the client calls into.
  */
-interface NewBaseClientOptions {
+interface NewBasePackageOptions {
   readonly gRPCClient: SuiGrpcClient;
   readonly logLevel?: LogLevel;
   readonly packageID: string;
 }
 
-export default NewBaseClientOptions;
+export default NewBasePackageOptions;
