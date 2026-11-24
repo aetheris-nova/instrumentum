@@ -11,7 +11,7 @@
     "incremental": true,
     "isolatedModules": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "moduleResolution": "Node",
+    "moduleResolution": "Bundler",
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
